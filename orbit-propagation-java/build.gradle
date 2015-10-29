@@ -1,0 +1,70 @@
+ext {
+    springBootVersion = '1.2.7.RELEASE'
+}
+
+buildscript {
+    repositories {
+        // use jcenter() or mavenCentral() instead if outside of AGI corporate network
+        maven  {
+            url 'http://repo1.maven.org/maven2'
+        }
+    }
+    dependencies {
+        classpath "org.springframework.boot:spring-boot-gradle-plugin:1.2.7.RELEASE"
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'spring-boot'
+apply plugin: 'eclipse'
+
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
+
+repositories {
+    // use jcenter() or mavenCentral() instead if outside of AGI corporate network
+    maven  {
+        url 'http://repo1.maven.org/maven2'
+    }
+    flatDir {
+        dirs 'lib'
+    }
+}
+
+dependencies {
+    compile 'agi:agi.foundation.core:2015r2',
+        'agi:agi.foundation.models:2015r2',
+        'agi:agi.foundation.platforms:2015r2',
+        'agi:agi.foundation.cesium:2015r2'
+
+    compile "org.springframework.boot:spring-boot-starter-web:${springBootVersion}",
+        'com.fasterxml.jackson.datatype:jackson-datatype-joda:2.6.3'
+
+    testCompile "org.springframework.boot:spring-boot-starter-test:${springBootVersion}"
+}
+
+bootRepackage {
+    mainClassName = 'com.agi.tutorial.orbit.OrbitPropagationTutorial'
+}
+
+eclipse {
+    project {
+        name = archivesBaseName
+        natures 'org.springsource.ide.eclipse.gradle.core.nature'
+    }
+
+    jdt {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+
+    classpath {
+        downloadSources = true
+        downloadJavadoc = true
+    }
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.6'
+    distributionUrl = "http://services.gradle.org/distributions/gradle-${gradleVersion}-bin.zip"
+}

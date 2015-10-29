@@ -1,0 +1,8 @@
+C:\Users\dhonaker\Documents\Visual Studio 2013\Projects\czml-writer\CesiumLanguageWriter\bin\Debug\CesiumLanguageWriter.XML
+C:\Users\dhonaker\Documents\Visual Studio 2013\Projects\czml-writer\CesiumLanguageWriter\bin\Debug\CesiumLanguageWriter.dll
+C:\Users\dhonaker\Documents\Visual Studio 2013\Projects\czml-writer\CesiumLanguageWriter\bin\Debug\CesiumLanguageWriter.pdb
+C:\Users\dhonaker\Documents\Visual Studio 2013\Projects\czml-writer\CesiumLanguageWriter\obj\Debug\CesiumLanguageWriter.csprojResolveAssemblyReference.cache
+C:\Users\dhonaker\Documents\Visual Studio 2013\Projects\czml-writer\CesiumLanguageWriter\obj\Debug\CesiumLanguageWriter.CesiumLocalization.resources
+C:\Users\dhonaker\Documents\Visual Studio 2013\Projects\czml-writer\CesiumLanguageWriter\obj\Debug\CesiumLanguageWriter.csproj.GenerateResource.Cache
+C:\Users\dhonaker\Documents\Visual Studio 2013\Projects\czml-writer\CesiumLanguageWriter\obj\Debug\CesiumLanguageWriter.dll
+C:\Users\dhonaker\Documents\Visual Studio 2013\Projects\czml-writer\CesiumLanguageWriter\obj\Debug\CesiumLanguageWriter.pdb

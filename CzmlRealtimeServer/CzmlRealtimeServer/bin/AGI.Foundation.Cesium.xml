@@ -1,0 +1,3255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>AGI.Foundation.Cesium</name>
+  </assembly>
+  <members>
+    <member name="T:AGI.Foundation.Cesium.AccessQueryCesiumProperty`1">
+      <summary>
+            A <see cref="T:AGI.Foundation.Cesium.Advanced.CesiumProperty`1" /> which maps the result of an <see cref="T:AGI.Foundation.Access.AccessQuery" />
+            to different values depending on the generated <see cref="T:AGI.Foundation.Access.AccessQueryResult" />.
+            </summary>
+      <typeparam name="T">The type of data.</typeparam>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.AccessQueryCesiumProperty`1.#ctor">
+      <summary>
+            Creates a new instance.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.AccessQueryCesiumProperty`1.#ctor(AGI.Foundation.Access.AccessQuery,System.IServiceProvider,`0,`0,`0)">
+      <summary>
+            Creates a new instance with the specified parameters.
+            </summary>
+      <param name="accessQuery">The query to evaluate.</param>
+      <param name="timeObserver">The <see cref="T:System.IServiceProvider" /> time observer to use when evaluating this query.</param>
+      <param name="accessExists">The value of the property when access exists.</param>
+      <param name="accessUnknown">The value of the property when access is unknown.</param>
+      <param name="noAccess">The value of the property when no access exists.</param>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.AccessQueryCesiumProperty`1.#ctor(AGI.Foundation.Access.AccessQuery,`0,`0,`0)">
+      <summary>
+            Creates a new instance with the specified parameters.
+            </summary>
+      <param name="accessQuery">The query to evaluate.</param>
+      <param name="accessExists">The value of the property when access exists.</param>
+      <param name="accessUnknown">The value of the property when access is unknown.</param>
+      <param name="noAccess">The value of the property when no access exists.</param>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.AccessQueryCesiumProperty`1.AccessExists">
+      <summary>
+            Gets or sets the value of the property when access exists.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.AccessQueryCesiumProperty`1.AccessUnknown">
+      <summary>
+            Gets or sets the value of the property when access is unknown.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.AccessQueryCesiumProperty`1.NoAccess">
+      <summary>
+            Gets or sets the value of the property when no access exists.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.AccessQueryCesiumProperty`1.Query">
+      <summary>
+            Gets or sets the access query to evaluate.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.AccessQueryCesiumProperty`1.TimeObserver">
+      <summary>
+            Gets or sets the <see cref="T:System.IServiceProvider" /> to use as the time observer for the query.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.AzimuthElevationMaskGraphics">
+      <summary>
+            Defines the graphical properties of an <see cref="T:AGI.Foundation.Terrain.AzimuthElevationMask" />.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.AzimuthElevationMaskGraphics.#ctor">
+      <summary>
+            Creates a new instance.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.AzimuthElevationMaskGraphics.Fill">
+      <summary>
+            Gets or sets whether or not the mask is filled.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.AzimuthElevationMaskGraphics.Material">
+      <summary>
+            Gets or sets the material used to fill the region.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.AzimuthElevationMaskGraphics.NumberOfRings">
+      <summary>
+            Gets or sets the number of rings to draw for the outline.  Rings start from the outer edge and are equidistantly spaced towards the center.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.AzimuthElevationMaskGraphics.Outline">
+      <summary>
+            Gets or sets whether or not the mask is outlined.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.AzimuthElevationMaskGraphics.OutlineColor">
+      <summary>
+            Gets or sets the color of the outline.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.AzimuthElevationMaskGraphics.Projection">
+      <summary>
+            Gets or sets how the mask is projected.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.AzimuthElevationMaskGraphics.ProjectionAltitude">
+      <summary>
+            Gets or sets the altitude to use when <code>Projection</code> is <see cref="F:AGI.Foundation.Cesium.AzimuthElevationMaskGraphicsProjection.ProjectToAltitude" />.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.AzimuthElevationMaskGraphics.ProjectionRange">
+      <summary>
+            Gets or sets the range to use when <code>Projection</code> is <see cref="F:AGI.Foundation.Cesium.AzimuthElevationMaskGraphicsProjection.ProjectToRange" />.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.AzimuthElevationMaskGraphics.Show">
+      <summary>
+            Gets or sets whether or not the mask is shown.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.AzimuthElevationMaskGraphicsExtension">
+      <summary>
+            An extension that defines the graphics of an <see cref="T:AGI.Foundation.Terrain.AzimuthElevationMask" />
+            drawn at a location defined by <see cref="T:AGI.Foundation.Geometry.ILocationPointService" /> and
+            orientation defined by <see cref="T:AGI.Foundation.Geometry.IOrientationAxesService" />.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.AzimuthElevationMaskGraphicsExtension.#ctor">
+      <summary>
+            Creates a new instance.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.AzimuthElevationMaskGraphicsExtension.#ctor(AGI.Foundation.Cesium.AzimuthElevationMaskGraphics)">
+      <summary>
+            Initializes a new instance with the provided <see cref="T:AGI.Foundation.Cesium.AzimuthElevationMaskGraphics" />.
+            </summary>
+      <param name="maskGraphics">The graphical properties of the mask.</param>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.AzimuthElevationMaskGraphicsExtension.#ctor(AGI.Foundation.Cesium.AzimuthElevationMaskGraphicsExtension,AGI.Foundation.Infrastructure.CopyContext)">
+      <summary>
+            Initializes a new instance as a copy of an existing instance.
+            </summary>
+      <param name="existingInstance">The existing instance to copy.</param>
+      <param name="context">A <see cref="T:AGI.Foundation.Infrastructure.CopyContext" /> that controls the depth of the copy</param>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.AzimuthElevationMaskGraphicsExtension.CheckForSameDefinition(AGI.Foundation.Cesium.AzimuthElevationMaskGraphicsExtension)">
+      <summary>
+        Checks to determine if another instance has the same definition as this instance and
+        returns true if it does.  Derived classes MUST override this method and check
+        all new fields introduced by the derived class for definitional equivalence.  It is NOT necessary
+        to check base class fields because the base class will already have done that.  When overriding this method,
+        you should NOT call the base implementation because it will return false for all derived-class instances.
+        Derived classes should check the type of <paramref name="other" /> to preserve the symmetric nature of <see cref="M:AGI.Foundation.Infrastructure.IEquatableDefinition.IsSameDefinition(System.Object)" />.
+      </summary>
+      <param name="other">The other instance to compare to this one.</param>
+      <returns>
+        true if the two objects are defined equivalently, otherwise false.
+      </returns>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.AzimuthElevationMaskGraphicsExtension.CheckForSameDefinition(AGI.Foundation.Infrastructure.ObjectExtension)">
+      <summary>
+        Checks to determine if another instance has the same definition as this instance and
+        returns true if it does.  Derived classes MUST override this method and check
+        all new fields introduced by the derived class for definitional equivalence.  It is NOT necessary
+        to check base class fields because the base class will already have done that.  When overriding this method,
+        you should NOT call the base implementation because it will return false for all derived-class instances.
+        Derived classes should check the type of <paramref name="other" /> to preserve the symmetric nature of <see cref="M:AGI.Foundation.Infrastructure.IEquatableDefinition.IsSameDefinition(System.Object)" />.
+      </summary>
+      <param name="other">The other instance to compare to this one.</param>
+      <returns>
+        true if the two objects are defined equivalently, otherwise false.
+      </returns>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.AzimuthElevationMaskGraphicsExtension.Clone(AGI.Foundation.Infrastructure.CopyContext)">
+      <summary>
+      Clones this object using the specified context.
+    </summary>
+      <param name="context">The context to use to perform the copy.</param>
+      <returns>
+      A new instance which is a copy of this object.
+    </returns>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.AzimuthElevationMaskGraphicsExtension.ComputeCurrentDefinitionHashCode">
+      <summary>
+        Computes a hash code based on the current properties of this object. Derived classes MUST override this
+        method and compute a hash code that combines: a unique hash code seed, the base implementation result, and
+        the hash codes of all new fields introduced by the derived class which are used in the
+        <see cref="M:AGI.Foundation.Infrastructure.DefinitionalObject.CheckForSameDefinition(AGI.Foundation.Infrastructure.DefinitionalObject)" /> method.
+      </summary>
+      <returns>The computed hash code.</returns>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.AzimuthElevationMaskGraphicsExtension.EnumerateDependencies(AGI.Foundation.Infrastructure.DependencyEnumerator)">
+      <summary>
+        Enumerates the dependencies of this object by calling
+        <see cref="M:AGI.Foundation.Infrastructure.DependencyEnumerator.Enumerate``1(``0)" /> for each object that this object directly depends upon.
+        Derived classes which contain additional dependencies MUST override this method, call the base
+        implementation, and enumerate dependencies introduced by the derived class.
+      </summary>
+      <param name="enumerator">The enumerator that is informed of the dependencies of this object.</param>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.AzimuthElevationMaskGraphicsExtension.MaskGraphics">
+      <summary>
+            Gets or sets the graphical properties of the mask.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.AzimuthElevationMaskGraphicsProjection">
+      <summary>
+            Defines how <see cref="T:AGI.Foundation.Cesium.AzimuthElevationMaskGraphics" /> are visualized.
+            </summary>
+    </member>
+    <member name="F:AGI.Foundation.Cesium.AzimuthElevationMaskGraphicsProjection.ProjectToRange">
+      <summary>
+            Each direction of the mask extends from the center by a constant length.
+            </summary>
+    </member>
+    <member name="F:AGI.Foundation.Cesium.AzimuthElevationMaskGraphicsProjection.ProjectToAltitude">
+      <summary>
+            Each direction of the mask extends from the center to a constant altitude above the <see cref="T:AGI.Foundation.Celestial.CentralBody" />.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.BillboardGraphics">
+      <summary>
+            Defines the graphical properties of a billboard, also sometimes called a marker.
+            A billboard is a viewport-aligned image positioned in the 3D scene.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.BillboardGraphics.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:AGI.Foundation.Cesium.BillboardGraphics" /> class</summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.BillboardGraphics.Color">
+      <summary>
+            Gets or sets the color of the billboard. If set, this color value is multiplied
+            with the values of the billboard image to produce the final color.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.BillboardGraphics.EyeOffset">
+      <summary>
+            Gets or sets the billboard's offset from the origin in eye coordinates.
+            Eye coordinates are specified in a left-handed coordinate system where <code>X</code>
+            points toward the viewer's right, <code>Y</code> points up, and <code>Z</code>
+            points into the screen.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.BillboardGraphics.HorizontalOrigin">
+      <summary>
+            Gets or sets whether the billboard is left, center, or right-aligned with the origin.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.BillboardGraphics.Image">
+      <summary>
+            Gets or sets the billboard image.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.BillboardGraphics.PixelOffset">
+      <summary>
+            Gets or sets the billboard's offset from the origin in pixel coordinates.
+            The <code>Y</code> coordinate moves the billboard upwards, and the <code>X</code>
+            coordinate moves the billboard to the right.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.BillboardGraphics.Scale">
+      <summary>
+            Gets or sets the scale of the billboard image.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.BillboardGraphics.Show">
+      <summary>
+            Gets or sets whether or not the billboard is shown.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.BillboardGraphics.VerticalOrigin">
+      <summary>
+            Gets or sets whether the billboard is bottom, center, or top-aligned with the origin.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.BillboardGraphicsExtension">
+      <summary>
+            An extension that defines the graphics of a billboard drawn at
+            the location defined by <see cref="T:AGI.Foundation.Geometry.ILocationPointService" />.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.BillboardGraphicsExtension.#ctor">
+      <summary>
+            Creates a new instance.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.BillboardGraphicsExtension.#ctor(AGI.Foundation.Cesium.BillboardGraphics)">
+      <summary>
+            Creates a new instance with the provided <see cref="P:AGI.Foundation.Cesium.BillboardGraphicsExtension.BillboardGraphics" />.
+            </summary>
+      <param name="billboard">The graphical properties of the billboard.</param>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.BillboardGraphicsExtension.#ctor(AGI.Foundation.Cesium.BillboardGraphicsExtension,AGI.Foundation.Infrastructure.CopyContext)">
+      <summary>
+            Creates a new instance as a copy of an existing instance.
+            </summary>
+      <param name="existingInstance">The existing instance to copy.</param>
+      <param name="context">A <see cref="T:AGI.Foundation.Infrastructure.CopyContext" /> that controls the depth of the copy.</param>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.BillboardGraphicsExtension.BillboardGraphics">
+      <summary>
+            Gets or sets the graphical properties of the billboard.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.BillboardGraphicsExtension.CheckForSameDefinition(AGI.Foundation.Cesium.BillboardGraphicsExtension)">
+      <summary>
+        Checks to determine if another instance has the same definition as this instance and
+        returns true if it does.  Derived classes MUST override this method and check
+        all new fields introduced by the derived class for definitional equivalence.  It is NOT necessary
+        to check base class fields because the base class will already have done that.  When overriding this method,
+        you should NOT call the base implementation because it will return false for all derived-class instances.
+        Derived classes should check the type of <paramref name="other" /> to preserve the symmetric nature of <see cref="M:AGI.Foundation.Infrastructure.IEquatableDefinition.IsSameDefinition(System.Object)" />.
+      </summary>
+      <param name="other">The other instance to compare to this one.</param>
+      <returns>
+        true if the two objects are defined equivalently, otherwise false.
+      </returns>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.BillboardGraphicsExtension.CheckForSameDefinition(AGI.Foundation.Infrastructure.ObjectExtension)">
+      <summary>
+        Checks to determine if another instance has the same definition as this instance and
+        returns true if it does.  Derived classes MUST override this method and check
+        all new fields introduced by the derived class for definitional equivalence.  It is NOT necessary
+        to check base class fields because the base class will already have done that.  When overriding this method,
+        you should NOT call the base implementation because it will return false for all derived-class instances.
+        Derived classes should check the type of <paramref name="other" /> to preserve the symmetric nature of <see cref="M:AGI.Foundation.Infrastructure.IEquatableDefinition.IsSameDefinition(System.Object)" />.
+      </summary>
+      <param name="other">The other instance to compare to this one.</param>
+      <returns>
+        true if the two objects are defined equivalently, otherwise false.
+      </returns>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.BillboardGraphicsExtension.Clone(AGI.Foundation.Infrastructure.CopyContext)">
+      <summary>
+      Clones this object using the specified context.
+    </summary>
+      <param name="context">The context to use to perform the copy.</param>
+      <returns>
+      A new instance which is a copy of this object.
+    </returns>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.BillboardGraphicsExtension.ComputeCurrentDefinitionHashCode">
+      <summary>
+        Computes a hash code based on the current properties of this object. Derived classes MUST override this
+        method and compute a hash code that combines: a unique hash code seed, the base implementation result, and
+        the hash codes of all new fields introduced by the derived class which are used in the
+        <see cref="M:AGI.Foundation.Infrastructure.DefinitionalObject.CheckForSameDefinition(AGI.Foundation.Infrastructure.DefinitionalObject)" /> method.
+      </summary>
+      <returns>The computed hash code.</returns>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.BillboardGraphicsExtension.EnumerateDependencies(AGI.Foundation.Infrastructure.DependencyEnumerator)">
+      <summary>
+        Enumerates the dependencies of this object by calling
+        <see cref="M:AGI.Foundation.Infrastructure.DependencyEnumerator.Enumerate``1(``0)" /> for each object that this object directly depends upon.
+        Derived classes which contain additional dependencies MUST override this method, call the base
+        implementation, and enumerate dependencies introduced by the derived class.
+      </summary>
+      <param name="enumerator">The enumerator that is informed of the dependencies of this object.</param>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.CentralBodySurfaceRegionGraphics">
+      <summary>
+            Defines the graphical properties of a <see cref="T:AGI.Foundation.Platforms.CentralBodySurfaceRegion" />.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.CentralBodySurfaceRegionGraphics.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:AGI.Foundation.Cesium.CentralBodySurfaceRegionGraphics" /> class</summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.CentralBodySurfaceRegionGraphics.ExtrudedHeight">
+      <summary>
+            Gets or sets the height at which to extrude the region, creating a volume.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.CentralBodySurfaceRegionGraphics.Fill">
+      <summary>
+            Gets or sets whether or not the region is filled.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.CentralBodySurfaceRegionGraphics.Granularity">
+      <summary>
+            Gets or sets the the granularity, in radians, used to compute the surface geometry.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.CentralBodySurfaceRegionGraphics.Height">
+      <summary>
+            Gets or sets the height above the surface of the <see cref="T:AGI.Foundation.Celestial.CentralBody" /> that the region is drawn.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.CentralBodySurfaceRegionGraphics.Material">
+      <summary>
+            Gets or sets the material used to fill the region.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.CentralBodySurfaceRegionGraphics.Outline">
+      <summary>
+            Gets or sets whether or not the region is outlined.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.CentralBodySurfaceRegionGraphics.OutlineColor">
+      <summary>
+            Gets or sets the color of the region's outline.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.CentralBodySurfaceRegionGraphics.Show">
+      <summary>
+            Gets or sets whether or not the region is shown.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.CentralBodySurfaceRegionGraphics.STRotation">
+      <summary>
+            Gets or sets the rotation, in radians, to apply the material when filling.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.CentralBodySurfaceRegionGraphicsExtension">
+      <summary>
+            An extension that defines the graphical properties of an area defined
+            by a <see cref="T:AGI.Foundation.Platforms.CentralBodySurfaceRegion" />.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.CentralBodySurfaceRegionGraphicsExtension.#ctor">
+      <summary>
+            Initializes a new instance.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.CentralBodySurfaceRegionGraphicsExtension.#ctor(AGI.Foundation.Cesium.CentralBodySurfaceRegionGraphics)">
+      <summary>
+            Initializes a new instance with the provided <see cref="T:AGI.Foundation.Cesium.CentralBodySurfaceRegionGraphics" />.
+            </summary>
+      <param name="surfaceRegionGraphics">The graphical properties of the surface region.</param>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.CentralBodySurfaceRegionGraphicsExtension.#ctor(AGI.Foundation.Cesium.CentralBodySurfaceRegionGraphicsExtension,AGI.Foundation.Infrastructure.CopyContext)">
+      <summary>
+            Initializes a new instance as a copy of an existing instance.
+            </summary>
+      <param name="existingInstance">The existing instance to copy.</param>
+      <param name="context">A <see cref="T:AGI.Foundation.Infrastructure.CopyContext" /> that controls the depth of the copy</param>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.CentralBodySurfaceRegionGraphicsExtension.CheckForSameDefinition(AGI.Foundation.Cesium.CentralBodySurfaceRegionGraphicsExtension)">
+      <summary>
+        Checks to determine if another instance has the same definition as this instance and
+        returns true if it does.  Derived classes MUST override this method and check
+        all new fields introduced by the derived class for definitional equivalence.  It is NOT necessary
+        to check base class fields because the base class will already have done that.  When overriding this method,
+        you should NOT call the base implementation because it will return false for all derived-class instances.
+        Derived classes should check the type of <paramref name="other" /> to preserve the symmetric nature of <see cref="M:AGI.Foundation.Infrastructure.IEquatableDefinition.IsSameDefinition(System.Object)" />.
+      </summary>
+      <param name="other">The other instance to compare to this one.</param>
+      <returns>
+        true if the two objects are defined equivalently, otherwise false.
+      </returns>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.CentralBodySurfaceRegionGraphicsExtension.CheckForSameDefinition(AGI.Foundation.Infrastructure.ObjectExtension)">
+      <summary>
+        Checks to determine if another instance has the same definition as this instance and
+        returns true if it does.  Derived classes MUST override this method and check
+        all new fields introduced by the derived class for definitional equivalence.  It is NOT necessary
+        to check base class fields because the base class will already have done that.  When overriding this method,
+        you should NOT call the base implementation because it will return false for all derived-class instances.
+        Derived classes should check the type of <paramref name="other" /> to preserve the symmetric nature of <see cref="M:AGI.Foundation.Infrastructure.IEquatableDefinition.IsSameDefinition(System.Object)" />.
+      </summary>
+      <param name="other">The other instance to compare to this one.</param>
+      <returns>
+        true if the two objects are defined equivalently, otherwise false.
+      </returns>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.CentralBodySurfaceRegionGraphicsExtension.Clone(AGI.Foundation.Infrastructure.CopyContext)">
+      <summary>
+      Clones this object using the specified context.
+    </summary>
+      <param name="context">The context to use to perform the copy.</param>
+      <returns>
+      A new instance which is a copy of this object.
+    </returns>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.CentralBodySurfaceRegionGraphicsExtension.ComputeCurrentDefinitionHashCode">
+      <summary>
+        Computes a hash code based on the current properties of this object. Derived classes MUST override this
+        method and compute a hash code that combines: a unique hash code seed, the base implementation result, and
+        the hash codes of all new fields introduced by the derived class which are used in the
+        <see cref="M:AGI.Foundation.Infrastructure.DefinitionalObject.CheckForSameDefinition(AGI.Foundation.Infrastructure.DefinitionalObject)" /> method.
+      </summary>
+      <returns>The computed hash code.</returns>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.CentralBodySurfaceRegionGraphicsExtension.EnumerateDependencies(AGI.Foundation.Infrastructure.DependencyEnumerator)">
+      <summary>
+        Enumerates the dependencies of this object by calling
+        <see cref="M:AGI.Foundation.Infrastructure.DependencyEnumerator.Enumerate``1(``0)" /> for each object that this object directly depends upon.
+        Derived classes which contain additional dependencies MUST override this method, call the base
+        implementation, and enumerate dependencies introduced by the derived class.
+      </summary>
+      <param name="enumerator">The enumerator that is informed of the dependencies of this object.</param>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.CentralBodySurfaceRegionGraphicsExtension.SurfaceRegionGraphics">
+      <summary>
+            Gets or sets the graphical properties of the surface region.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.CesiumAvailabilityExtension">
+      <summary>
+            An extension that defines the availability of a CZML object.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.CesiumAvailabilityExtension.#ctor">
+      <summary>
+            Initializes a new instance.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.CesiumAvailabilityExtension.#ctor(AGI.Foundation.Cesium.CesiumAvailabilityExtension,AGI.Foundation.Infrastructure.CopyContext)">
+      <summary>
+            Initializes a new instance as a copy of an existing instance.
+            </summary>
+      <param name="existingInstance">The existing instance to copy.</param>
+      <param name="context">A <see cref="T:AGI.Foundation.Infrastructure.CopyContext" /> that controls the depth of the copy.</param>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.CesiumAvailabilityExtension.#ctor(AGI.Foundation.Time.TimeIntervalCollection)">
+      <summary>
+            Initializes a new instance with the provided <see cref="T:AGI.Foundation.Time.TimeIntervalCollection" />.
+            </summary>
+      <param name="intervals">The interval collection.</param>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.CesiumAvailabilityExtension.CesiumAvailability">
+      <summary>
+            Gets the collection on intervals defining the availability.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.CesiumAvailabilityExtension.CheckForSameDefinition(AGI.Foundation.Cesium.CesiumAvailabilityExtension)">
+      <summary>
+        Checks to determine if another instance has the same definition as this instance and
+        returns true if it does.  Derived classes MUST override this method and check
+        all new fields introduced by the derived class for definitional equivalence.  It is NOT necessary
+        to check base class fields because the base class will already have done that.  When overriding this method,
+        you should NOT call the base implementation because it will return false for all derived-class instances.
+        Derived classes should check the type of <paramref name="other" /> to preserve the symmetric nature of <see cref="M:AGI.Foundation.Infrastructure.IEquatableDefinition.IsSameDefinition(System.Object)" />.
+      </summary>
+      <param name="other">The other instance to compare to this one.</param>
+      <returns>
+        true if the two objects are defined equivalently, otherwise false.
+      </returns>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.CesiumAvailabilityExtension.CheckForSameDefinition(AGI.Foundation.Infrastructure.ObjectExtension)">
+      <summary>
+        Checks to determine if another instance has the same definition as this instance and
+        returns true if it does.  Derived classes MUST override this method and check
+        all new fields introduced by the derived class for definitional equivalence.  It is NOT necessary
+        to check base class fields because the base class will already have done that.  When overriding this method,
+        you should NOT call the base implementation because it will return false for all derived-class instances.
+        Derived classes should check the type of <paramref name="other" /> to preserve the symmetric nature of <see cref="M:AGI.Foundation.Infrastructure.IEquatableDefinition.IsSameDefinition(System.Object)" />.
+      </summary>
+      <param name="other">The other instance to compare to this one.</param>
+      <returns>
+        true if the two objects are defined equivalently, otherwise false.
+      </returns>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.CesiumAvailabilityExtension.Clone(AGI.Foundation.Infrastructure.CopyContext)">
+      <summary>
+      Clones this object using the specified context.
+    </summary>
+      <param name="context">The context to use to perform the copy.</param>
+      <returns>
+      A new instance which is a copy of this object.
+    </returns>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.CesiumAvailabilityExtension.ComputeCurrentDefinitionHashCode">
+      <summary>
+        Computes a hash code based on the current properties of this object. Derived classes MUST override this
+        method and compute a hash code that combines: a unique hash code seed, the base implementation result, and
+        the hash codes of all new fields introduced by the derived class which are used in the
+        <see cref="M:AGI.Foundation.Infrastructure.DefinitionalObject.CheckForSameDefinition(AGI.Foundation.Infrastructure.DefinitionalObject)" /> method.
+      </summary>
+      <returns>The computed hash code.</returns>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.CesiumAvailabilityExtension.EnumerateDependencies(AGI.Foundation.Infrastructure.DependencyEnumerator)">
+      <summary>
+        Enumerates the dependencies of this object by calling
+        <see cref="M:AGI.Foundation.Infrastructure.DependencyEnumerator.Enumerate``1(``0)" /> for each object that this object directly depends upon.
+        Derived classes which contain additional dependencies MUST override this method, call the base
+        implementation, and enumerate dependencies introduced by the derived class.
+      </summary>
+      <param name="enumerator">The enumerator that is informed of the dependencies of this object.</param>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.CesiumExtrapolationType">
+      <summary>
+            The type of extrapolation to perform when outside the sample data range of an interpolatable property.
+            </summary>
+    </member>
+    <member name="F:AGI.Foundation.Cesium.CesiumExtrapolationType.None">
+      <summary>
+            No extrapolation is performed; the property is undefined.
+            </summary>
+    </member>
+    <member name="F:AGI.Foundation.Cesium.CesiumExtrapolationType.Hold">
+      <summary>
+            Return the first or last sample value.
+            </summary>
+    </member>
+    <member name="F:AGI.Foundation.Cesium.CesiumExtrapolationType.Extrapolate">
+      <summary>
+            Extrapolate the value.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.CesiumGenerationStatus">
+      <summary>
+            The return value of a call to <see cref="T:AGI.Foundation.Cesium.CzmlDocumentPacketizer">CzmlDocumentPacketizer.GenerateNextPacket</see>.
+            </summary>
+    </member>
+    <member name="F:AGI.Foundation.Cesium.CesiumGenerationStatus.Done">
+      <summary>
+            All data has been written. No further calls to <see cref="T:AGI.Foundation.Cesium.CzmlDocumentPacketizer">CzmlDocumentPacketizer.GenerateNextPacket</see> are needed.
+            </summary>
+    </member>
+    <member name="F:AGI.Foundation.Cesium.CesiumGenerationStatus.MoreToGenerate">
+      <summary>
+            There is more data to write.  <see cref="M:AGI.Foundation.Cesium.Advanced.CesiumGeneratorContext.GenerateOnePacket(AGI.Foundation.Cesium.CesiumOutputStream)" /> should be called again.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.CesiumHorizontalOrigin">
+      <summary>
+            The horizontal origin of a billboard or label relative to its position.
+            </summary>
+    </member>
+    <member name="F:AGI.Foundation.Cesium.CesiumHorizontalOrigin.Left">
+      <summary>
+            The left side of the billboard or label is located at the position.
+            </summary>
+    </member>
+    <member name="F:AGI.Foundation.Cesium.CesiumHorizontalOrigin.Center">
+      <summary>
+            The billboard or label is horizontally centered on the position.
+            </summary>
+    </member>
+    <member name="F:AGI.Foundation.Cesium.CesiumHorizontalOrigin.Right">
+      <summary>
+            The right side of the billboard or label is located at the position.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.CesiumInterpolationAlgorithm">
+      <summary>
+            The algorithm to use for interpolation of sampled data.
+            </summary>
+    </member>
+    <member name="F:AGI.Foundation.Cesium.CesiumInterpolationAlgorithm.Linear">
+      <summary>
+            Simple linear interpolation between two samples.
+            </summary>
+    </member>
+    <member name="F:AGI.Foundation.Cesium.CesiumInterpolationAlgorithm.Lagrange">
+      <summary>
+            Lagrange polynomial approximation.
+            </summary>
+    </member>
+    <member name="F:AGI.Foundation.Cesium.CesiumInterpolationAlgorithm.Hermite">
+      <summary>
+            Hermite polynomial approximation.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.CesiumLabelStyle">
+      <summary>
+            Specifies the style of label.
+            </summary>
+    </member>
+    <member name="F:AGI.Foundation.Cesium.CesiumLabelStyle.Fill">
+      <summary>
+            The label is filled.
+            </summary>
+    </member>
+    <member name="F:AGI.Foundation.Cesium.CesiumLabelStyle.Outline">
+      <summary>
+            The label is outlined.
+            </summary>
+    </member>
+    <member name="F:AGI.Foundation.Cesium.CesiumLabelStyle.FillAndOutline">
+      <summary>
+            The label is filled and outlined.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.CesiumOutputStream">
+      <summary>
+            A stream to which raw CZML data can be written.  This is a low-level class that
+            does not extensively validate that methods are called in a valid order,
+            so it can be used to generate invalid JSON.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.CesiumOutputStream.#ctor(System.IO.TextWriter)">
+      <summary>
+            Initializes a new instance.
+            </summary>
+      <param name="writer">The text stream to which to write data.</param>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.CesiumOutputStream.PrettyFormatting">
+      <summary>
+            Gets or sets whether or not the written data should be formatted for easy human readability.
+            When this property is false (the default), more compact Cesium is generated.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.CesiumOutputStream.WriteEndObject">
+      <summary>
+            Writes the end of an object.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.CesiumOutputStream.WriteEndSequence">
+      <summary>
+            Writes the end of a sequence.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.CesiumOutputStream.WriteLineBreak">
+      <summary>
+            When <see cref="P:AGI.Foundation.Cesium.CesiumOutputStream.PrettyFormatting" /> is true, adds a line break in a sequence of simple values.
+            When <see cref="P:AGI.Foundation.Cesium.CesiumOutputStream.PrettyFormatting" /> is false, this method does nothing.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.CesiumOutputStream.WritePropertyName(System.String)">
+      <summary>
+            Writes the name of a property.
+            </summary>
+      <param name="propertyName"></param>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.CesiumOutputStream.WriteStartObject">
+      <summary>
+            Writes the start of an object.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.CesiumOutputStream.WriteStartSequence">
+      <summary>
+            Writes the start of a sequence.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.CesiumOutputStream.WriteValue(System.Boolean)">
+      <summary>
+            Writes the value of a property or element in a sequence.
+            </summary>
+      <param name="value">The value to write.</param>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.CesiumOutputStream.WriteValue(System.Double)">
+      <summary>
+            Writes the value of a property or element in a sequence.
+            </summary>
+      <param name="value">The value to write.</param>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.CesiumOutputStream.WriteValue(System.Int32)">
+      <summary>
+            Writes the value of a property or element in a sequence.
+            </summary>
+      <param name="value">The value to write.</param>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.CesiumOutputStream.WriteValue(System.Int64)">
+      <summary>
+            Writes the value of a property or element in a sequence.
+            </summary>
+      <param name="value">The value to write.</param>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.CesiumOutputStream.WriteValue(System.String)">
+      <summary>
+            Writes the value of a property or element in a sequence.
+            </summary>
+      <param name="value">The value to write.</param>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.CesiumOutputStream.WriteValue(System.Uri)">
+      <summary>
+            Writes the value of a property or element in a sequence.
+            </summary>
+      <param name="value">The value to write.</param>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.CesiumReferenceFrameExtension">
+      <summary>
+            An extension that defines the reference frame in which an object's CZML position will be written.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.CesiumReferenceFrameExtension.#ctor">
+      <summary>
+            Initializes a new instance.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.CesiumReferenceFrameExtension.#ctor(AGI.Foundation.Cesium.CesiumReferenceFrameExtension,AGI.Foundation.Infrastructure.CopyContext)">
+      <summary>
+            Initializes a new instance as a copy of an existing instance.
+            </summary>
+      <param name="existingInstance">The existing instance to copy.</param>
+      <param name="context">A <see cref="T:AGI.Foundation.Infrastructure.CopyContext" /> that controls the depth of the copy.</param>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.CesiumReferenceFrameExtension.#ctor(AGI.Foundation.Geometry.ReferenceFrame)">
+      <summary>
+            Initializes a new instance with the provided <see cref="P:AGI.Foundation.Cesium.CesiumReferenceFrameExtension.CesiumReferenceFrame" />.
+            </summary>
+      <param name="graphicsReferenceFrame">
+            The reference frame to use for graphics.  The object's position will be described relative to this
+            reference frame.
+            </param>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.CesiumReferenceFrameExtension.CesiumReferenceFrame">
+      <summary>
+            Gets or sets the reference frame in which an object's CZML position will be written.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.CesiumReferenceFrameExtension.CheckForSameDefinition(AGI.Foundation.Cesium.CesiumReferenceFrameExtension)">
+      <summary>
+        Checks to determine if another instance has the same definition as this instance and
+        returns true if it does.  Derived classes MUST override this method and check
+        all new fields introduced by the derived class for definitional equivalence.  It is NOT necessary
+        to check base class fields because the base class will already have done that.  When overriding this method,
+        you should NOT call the base implementation because it will return false for all derived-class instances.
+        Derived classes should check the type of <paramref name="other" /> to preserve the symmetric nature of <see cref="M:AGI.Foundation.Infrastructure.IEquatableDefinition.IsSameDefinition(System.Object)" />.
+      </summary>
+      <param name="other">The other instance to compare to this one.</param>
+      <returns>
+        true if the two objects are defined equivalently, otherwise false.
+      </returns>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.CesiumReferenceFrameExtension.CheckForSameDefinition(AGI.Foundation.Infrastructure.ObjectExtension)">
+      <summary>
+        Checks to determine if another instance has the same definition as this instance and
+        returns true if it does.  Derived classes MUST override this method and check
+        all new fields introduced by the derived class for definitional equivalence.  It is NOT necessary
+        to check base class fields because the base class will already have done that.  When overriding this method,
+        you should NOT call the base implementation because it will return false for all derived-class instances.
+        Derived classes should check the type of <paramref name="other" /> to preserve the symmetric nature of <see cref="M:AGI.Foundation.Infrastructure.IEquatableDefinition.IsSameDefinition(System.Object)" />.
+      </summary>
+      <param name="other">The other instance to compare to this one.</param>
+      <returns>
+        true if the two objects are defined equivalently, otherwise false.
+      </returns>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.CesiumReferenceFrameExtension.Clone(AGI.Foundation.Infrastructure.CopyContext)">
+      <summary>
+      Clones this object using the specified context.
+    </summary>
+      <param name="context">The context to use to perform the copy.</param>
+      <returns>
+      A new instance which is a copy of this object.
+    </returns>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.CesiumReferenceFrameExtension.ComputeCurrentDefinitionHashCode">
+      <summary>
+        Computes a hash code based on the current properties of this object. Derived classes MUST override this
+        method and compute a hash code that combines: a unique hash code seed, the base implementation result, and
+        the hash codes of all new fields introduced by the derived class which are used in the
+        <see cref="M:AGI.Foundation.Infrastructure.DefinitionalObject.CheckForSameDefinition(AGI.Foundation.Infrastructure.DefinitionalObject)" /> method.
+      </summary>
+      <returns>The computed hash code.</returns>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.CesiumReferenceFrameExtension.EnumerateDependencies(AGI.Foundation.Infrastructure.DependencyEnumerator)">
+      <summary>
+        Enumerates the dependencies of this object by calling
+        <see cref="M:AGI.Foundation.Infrastructure.DependencyEnumerator.Enumerate``1(``0)" /> for each object that this object directly depends upon.
+        Derived classes which contain additional dependencies MUST override this method, call the base
+        implementation, and enumerate dependencies introduced by the derived class.
+      </summary>
+      <param name="enumerator">The enumerator that is informed of the dependencies of this object.</param>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.CesiumResource">
+      <summary>
+            A resource to be linked from or embedded into a CZML document.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.CesiumResource.#ctor(System.Uri,AGI.Foundation.Cesium.CesiumResourceBehavior)">
+      <summary>
+            Initializes a new instance.
+            </summary>
+      <param name="uri">The URI of the resource.</param>
+      <param name="behavior">The enumeration describing how the resource is to be included in the document.</param>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.CesiumResource.Behavior">
+      <summary>
+            Gets how the resource is to be included in the document.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.CesiumResource.Uri">
+      <summary>
+            Gets the URI of the resource.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.CesiumResourceBehavior">
+      <summary>
+            Specifies whether to embed a resource into a CZML stream or simply link to them.
+            </summary>
+    </member>
+    <member name="F:AGI.Foundation.Cesium.CesiumResourceBehavior.Embed">
+      <summary>
+            Download and embed the resource inline in the document as a data URI.  This is the most compatible
+            option, but produces larger documents.
+            </summary>
+    </member>
+    <member name="F:AGI.Foundation.Cesium.CesiumResourceBehavior.LinkTo">
+      <summary>
+            Link to the resource directly in the document.  Browser-based CZML clients may need to make
+            cross-origin requests using <a href="http://www.w3.org/TR/cors/">Cross-Origin Resource Sharing</a>
+            to access the resource, which may need server configuration changes, see
+            <a href="http://enable-cors.org/">http://enable-cors.org/</a>.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.CesiumSensorVolumePortionToDisplay">
+      <summary>
+            Specifies which parts of a sensor are to be displayed.
+            </summary>
+    </member>
+    <member name="F:AGI.Foundation.Cesium.CesiumSensorVolumePortionToDisplay.Complete">
+      <summary>
+            The entire sensor projection is shown.
+            </summary>
+    </member>
+    <member name="F:AGI.Foundation.Cesium.CesiumSensorVolumePortionToDisplay.BelowEllipsoidHorizon">
+      <summary>
+            Only the part of the sensor projection below the ellipsoid horizon is shown.
+            </summary>
+    </member>
+    <member name="F:AGI.Foundation.Cesium.CesiumSensorVolumePortionToDisplay.AboveEllipsoidHorizon">
+      <summary>
+            Only the part of the sensor projection above the ellipsoid horizon is shown.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.CesiumStripeOrientation">
+      <summary>
+            The orientation of the stripes in a stripe material.
+            </summary>
+    </member>
+    <member name="F:AGI.Foundation.Cesium.CesiumStripeOrientation.Horizontal">
+      <summary>
+            The stripes are oriented horizontally along the X axis.
+            </summary>
+    </member>
+    <member name="F:AGI.Foundation.Cesium.CesiumStripeOrientation.Vertical">
+      <summary>
+            The stripes are oriented vertically along the Y axis.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.CesiumVerticalOrigin">
+      <summary>
+            The vertical origin of a billboard or label relative to its position.
+            </summary>
+    </member>
+    <member name="F:AGI.Foundation.Cesium.CesiumVerticalOrigin.Bottom">
+      <summary>
+            The bottom of the billboard or label is located at the position.
+            </summary>
+    </member>
+    <member name="F:AGI.Foundation.Cesium.CesiumVerticalOrigin.Center">
+      <summary>
+            The billboard or label is vertically centered at the position.
+            </summary>
+    </member>
+    <member name="F:AGI.Foundation.Cesium.CesiumVerticalOrigin.Top">
+      <summary>
+            The top of the billboard or label is located at the position.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.Clock">
+      <summary>
+            Defines initial clock settings associated with a <see cref="T:AGI.Foundation.Cesium.CzmlDocument" />.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.Clock.#ctor">
+      <summary>
+            Creates a new instance.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.Clock.CurrentTime">
+      <summary>
+            Gets or sets the initial time when the document is first loaded.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.Clock.Interval">
+      <summary>
+            Gets or sets the time span covered by the document.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.Clock.Multiplier">
+      <summary>
+            Gets or sets how much time advances with each tick.  Negative values cause time to move backwards.
+            If <c>Step</c> is <see cref="F:AGI.Foundation.Cesium.ClockStep.TickDependent" /> this is the number of seconds advanced each tick.
+            If <c>Step</c> is <see cref="F:AGI.Foundation.Cesium.ClockStep.SystemClockMultiplier" /> then the clock is advanced by the
+            amount of elapsed time since the last tick multiplied by this value.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.Clock.Range">
+      <summary>
+            Gets or sets how time behaves at <see cref="P:AGI.Foundation.Cesium.Clock.Interval" /> boundaries.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.Clock.Step">
+      <summary>
+            Gets or sets how time advances with each tick.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.ClockRange">
+      <summary>
+            Defines the behavior of a clock when its current time reaches its start or end point.
+            </summary>
+    </member>
+    <member name="F:AGI.Foundation.Cesium.ClockRange.Unbounded">
+      <summary>
+            The clock can continue forever in either direction.
+            </summary>
+    </member>
+    <member name="F:AGI.Foundation.Cesium.ClockRange.Clamped">
+      <summary>
+            The clock stops when either its start or end time is reached.
+            </summary>
+    </member>
+    <member name="F:AGI.Foundation.Cesium.ClockRange.LoopStop">
+      <summary>
+            The clock stops when its start time is reached, but loops back to start when its end time is reached.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.ClockStep">
+      <summary>
+            Defines how a simulated clock advances in time.
+            </summary>
+    </member>
+    <member name="F:AGI.Foundation.Cesium.ClockStep.SystemClock">
+      <summary>
+            The clock always matches the system clock.
+            </summary>
+    </member>
+    <member name="F:AGI.Foundation.Cesium.ClockStep.SystemClockMultiplier">
+      <summary>
+            The clock advances by the elapsed system time between ticks, multiplied by a user specified value.
+            </summary>
+    </member>
+    <member name="F:AGI.Foundation.Cesium.ClockStep.TickDependent">
+      <summary>
+            The clock advances by a fixed step each tick.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.CompositeCesiumProperty`1">
+      <summary>
+            A <see cref="T:AGI.Foundation.Cesium.Advanced.CesiumProperty`1" /> that specifies values over multiple distinct intervals of time.
+            Values are specified using a <see cref="T:AGI.Foundation.Time.TimeIntervalCollection`1" /> where the <see cref="P:AGI.Foundation.Time.TimeInterval`1.Data" />
+            property of each interval specifies another <see cref="T:AGI.Foundation.Cesium.Advanced.CesiumProperty`1" /> that defines the value for that interval.
+            </summary>
+      <typeparam name="T">The type of value.</typeparam>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.CompositeCesiumProperty`1.#ctor">
+      <summary>
+            Initializes a new instance.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.CompositeCesiumProperty`1.#ctor(AGI.Foundation.Time.TimeIntervalCollection{AGI.Foundation.Cesium.Advanced.CesiumProperty{`0}})">
+      <summary>
+            Initializes a new instance with the provided <see cref="T:AGI.Foundation.Time.TimeIntervalCollection`1" />.
+            </summary>
+      <param name="intervals">The initial collection of intervals.</param>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.CompositeCesiumProperty`1.Intervals">
+      <summary>
+            Gets or sets time intervals over which this property is defined.  Each interval's
+            <see cref="P:AGI.Foundation.Time.TimeInterval`1.Data" /> property specifies the value of the property over that
+            interval.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.CompositeCesiumProperty`1.op_Implicit(AGI.Foundation.Time.TimeIntervalCollection{AGI.Foundation.Cesium.Advanced.CesiumProperty{`0}})~AGI.Foundation.Cesium.CompositeCesiumProperty{`0}">
+      <summary>
+            Converts a <see cref="T:AGI.Foundation.Time.TimeIntervalCollection`1" /> to a <see cref="T:AGI.Foundation.Cesium.CompositeCesiumProperty`1" />.
+            </summary>
+      <param name="value">The value to convert</param>
+      <returns>The value wrapped in a <see cref="T:AGI.Foundation.Cesium.CompositeCesiumProperty`1" />.</returns>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.ConstantCesiumProperty`1">
+      <summary>
+            A <see cref="T:AGI.Foundation.Cesium.Advanced.CesiumProperty`1" /> that specifies a constant value.
+            </summary>
+      <typeparam name="T">The type of value.</typeparam>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.ConstantCesiumProperty`1.#ctor">
+      <summary>
+            Initializes a new instance.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.ConstantCesiumProperty`1.#ctor(`0)">
+      <summary>
+            Initializes a new instance with a specified value.
+            </summary>
+      <param name="value">The constant value of the property.</param>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.ConstantCesiumProperty`1.op_Implicit(`0)~AGI.Foundation.Cesium.ConstantCesiumProperty{`0}">
+      <summary>
+            Creates a new instance with the specified value.
+            </summary>
+      <param name="value">The constant value.</param>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.ConstantCesiumProperty`1.Value">
+      <summary>
+            Gets or sets the constant value of the property.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.CzmlDocument">
+      <summary>
+            Generates CZML files.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.CzmlDocument.#ctor">
+      <summary>
+            Creates a new instance.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.CzmlDocument.CesiumSources">
+      <summary>
+            Gets the collection of <see cref="T:AGI.Foundation.Cesium.Advanced.CesiumSource" /> instances used to generate CZML.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.CzmlDocument.Clock">
+      <summary>
+            Gets or sets the initial clock settings to be used when loading the document.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.CzmlDocument.CreateStreamingDocument">
+      <summary>
+            Creates an instance of <see cref="T:AGI.Foundation.Cesium.CzmlDocumentPacketizer" /> that can be used to stream CZML incrementally to a client.
+            The returned instance is immutable and any further changes to this class will not affect the resulting CZML.
+            </summary>
+      <returns></returns>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.CzmlDocument.CreateStreamingDocument(System.IO.TextWriter)">
+      <summary>
+            Creates an instance of <see cref="T:AGI.Foundation.Cesium.CzmlDocumentPacketizer" /> that can be used to stream CZML incrementally to a client.
+            The returned instance is immutable and any further changes to this class will not affect the resulting CZML.
+            </summary>
+      <param name="writer">The writer to use.</param>
+      <returns></returns>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.CzmlDocument.Description">
+      <summary>
+            Gets or sets the document description.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.CzmlDocument.EnableAutomaticReferencing">
+      <summary>
+            Gets or sets whether to enable automatic CZML reference creation for objects with the same definition.  Defaults to true.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.CzmlDocument.MaximumDataPointsPerPacket">
+      <summary>
+            Gets or sets the maximum number of data points to store in each CZML packet.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.CzmlDocument.Name">
+      <summary>
+            Gets or sets the name of the document.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.CzmlDocument.ObjectsToWrite">
+      <summary>
+            Gets the collection of instances to be written to CZML.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.CzmlDocument.PrettyFormatting">
+      <summary>
+            Gets or sets whether the resulting CZML file is nicely formatted.
+            If set to false, a slightly smaller file will be created,
+            but at the cost of human readability.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.CzmlDocument.RequestedInterval">
+      <summary>
+            Gets or sets the interval for which to write data.
+            </summary>
+    </member>
+    <member name="E:AGI.Foundation.Cesium.CzmlDocument.SamplingError">
+      <summary>
+            Event that is raised when a non-fatal sampling error occurs during CZML generation.
+            This event is only raised when <see cref="P:AGI.Foundation.Cesium.CzmlDocument.TerminateOnSamplingError" /> is true.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.CzmlDocument.Step">
+      <summary>
+            Gets or sets the step size to be used for sampling properties
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.CzmlDocument.TerminateOnSamplingError">
+      <summary>
+            Gets or sets whether or not CZML generation halts when a sample error occurs;
+            for example if a TLE fails to propagate at the desired time.  When true,
+            exceptions are thrown immediately and no further CZML will be written.  When false,
+            CZML generation will continue until finished and any exceptions are
+            raised via the <see cref="E:AGI.Foundation.Cesium.CzmlDocument.SamplingError" /> event.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.CzmlDocument.WriteDocument(System.IO.TextWriter)">
+      <summary>
+            Writes the document to the provided writer.
+            </summary>
+      <param name="writer">The writer to use.</param>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.CzmlDocumentPacketizer">
+      <summary>
+            Generates a CZML document one packet at a time to allow for incremental
+            processing by client applications.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.CzmlDocumentPacketizer.GenerateNextPacket">
+      <summary>
+            Writes a single CZML packet.
+            </summary>
+      <returns>
+        <see cref="F:AGI.Foundation.Cesium.CesiumGenerationStatus.Done" /> if all packets of been generated, <see cref="F:AGI.Foundation.Cesium.CesiumGenerationStatus.MoreToGenerate" /> otherwise.</returns>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.CzmlDocumentPacketizer.GenerateNextPacket(System.IO.TextWriter)">
+      <summary>
+            Writes a single CZML packet to the provided writer.
+            </summary>
+      <param name="writer">The writer to write to.</param>
+      <returns>
+        <see cref="F:AGI.Foundation.Cesium.CesiumGenerationStatus.Done" /> if all packets of been generated, <see cref="F:AGI.Foundation.Cesium.CesiumGenerationStatus.MoreToGenerate" /> otherwise.</returns>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.Description">
+      <summary>
+            Contains the description of a Cesium object.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.Description.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:AGI.Foundation.Cesium.Description" /> class</summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.Description.Text">
+      <summary>
+            Gets or sets the HTML description of the object.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.DescriptionExtension">
+      <summary>
+            An extension that defines that HTML description of an object.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.DescriptionExtension.#ctor">
+      <summary>
+            Initializes a new instance.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.DescriptionExtension.#ctor(AGI.Foundation.Cesium.Description)">
+      <summary>
+            Initializes a new instance with the provided <see cref="P:AGI.Foundation.Cesium.DescriptionExtension.Description" />.
+            </summary>
+      <param name="description">The graphical properties of the description.</param>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.DescriptionExtension.#ctor(AGI.Foundation.Cesium.DescriptionExtension,AGI.Foundation.Infrastructure.CopyContext)">
+      <summary>
+            Initializes a new instance as a copy of an existing instance.
+            </summary>
+      <param name="existingInstance">The existing instance to copy.</param>
+      <param name="context">A <see cref="T:AGI.Foundation.Infrastructure.CopyContext" /> that controls the depth of the copy.</param>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.DescriptionExtension.CheckForSameDefinition(AGI.Foundation.Cesium.DescriptionExtension)">
+      <summary>
+        Checks to determine if another instance has the same definition as this instance and
+        returns true if it does.  Derived classes MUST override this method and check
+        all new fields introduced by the derived class for definitional equivalence.  It is NOT necessary
+        to check base class fields because the base class will already have done that.  When overriding this method,
+        you should NOT call the base implementation because it will return false for all derived-class instances.
+        Derived classes should check the type of <paramref name="other" /> to preserve the symmetric nature of <see cref="M:AGI.Foundation.Infrastructure.IEquatableDefinition.IsSameDefinition(System.Object)" />.
+      </summary>
+      <param name="other">The other instance to compare to this one.</param>
+      <returns>
+        true if the two objects are defined equivalently, otherwise false.
+      </returns>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.DescriptionExtension.CheckForSameDefinition(AGI.Foundation.Infrastructure.ObjectExtension)">
+      <summary>
+        Checks to determine if another instance has the same definition as this instance and
+        returns true if it does.  Derived classes MUST override this method and check
+        all new fields introduced by the derived class for definitional equivalence.  It is NOT necessary
+        to check base class fields because the base class will already have done that.  When overriding this method,
+        you should NOT call the base implementation because it will return false for all derived-class instances.
+        Derived classes should check the type of <paramref name="other" /> to preserve the symmetric nature of <see cref="M:AGI.Foundation.Infrastructure.IEquatableDefinition.IsSameDefinition(System.Object)" />.
+      </summary>
+      <param name="other">The other instance to compare to this one.</param>
+      <returns>
+        true if the two objects are defined equivalently, otherwise false.
+      </returns>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.DescriptionExtension.Clone(AGI.Foundation.Infrastructure.CopyContext)">
+      <summary>
+      Clones this object using the specified context.
+    </summary>
+      <param name="context">The context to use to perform the copy.</param>
+      <returns>
+      A new instance which is a copy of this object.
+    </returns>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.DescriptionExtension.ComputeCurrentDefinitionHashCode">
+      <summary>
+        Computes a hash code based on the current properties of this object. Derived classes MUST override this
+        method and compute a hash code that combines: a unique hash code seed, the base implementation result, and
+        the hash codes of all new fields introduced by the derived class which are used in the
+        <see cref="M:AGI.Foundation.Infrastructure.DefinitionalObject.CheckForSameDefinition(AGI.Foundation.Infrastructure.DefinitionalObject)" /> method.
+      </summary>
+      <returns>The computed hash code.</returns>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.DescriptionExtension.Description">
+      <summary>
+            Gets or sets the description.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.DescriptionExtension.EnumerateDependencies(AGI.Foundation.Infrastructure.DependencyEnumerator)">
+      <summary>
+        Enumerates the dependencies of this object by calling
+        <see cref="M:AGI.Foundation.Infrastructure.DependencyEnumerator.Enumerate``1(``0)" /> for each object that this object directly depends upon.
+        Derived classes which contain additional dependencies MUST override this method, call the base
+        implementation, and enumerate dependencies introduced by the derived class.
+      </summary>
+      <param name="enumerator">The enumerator that is informed of the dependencies of this object.</param>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.EllipsoidGraphics">
+      <summary>
+            Defines the graphical properties of an ellipsoid.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.EllipsoidGraphics.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:AGI.Foundation.Cesium.EllipsoidGraphics" /> class</summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.EllipsoidGraphics.Fill">
+      <summary>
+            Gets or sets whether or not the ellipsoid is filled.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.EllipsoidGraphics.Material">
+      <summary>
+            Gets or sets the material used to fill the surface of the ellipsoid.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.EllipsoidGraphics.Outline">
+      <summary>
+            Gets or sets whether or not the ellipsoid is outlined.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.EllipsoidGraphics.OutlineColor">
+      <summary>
+            Gets or sets the color of the ellipsoid's outline.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.EllipsoidGraphics.Radii">
+      <summary>
+            Gets or sets the radii of the ellipsoid.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.EllipsoidGraphics.Show">
+      <summary>
+            Gets or sets whether or not the ellipsoid is shown.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.EllipsoidGraphics.SlicePartitions">
+      <summary>
+            Gets or sets the number of slices used to partition the ellipsoid.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.EllipsoidGraphics.StackPartitions">
+      <summary>
+            Gets or sets the number of stacks used to partition the ellipsoid.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.EllipsoidGraphics.Subdivisions">
+      <summary>
+            Gets or sets the number of points per outline; thus controlling the granularity.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.EllipsoidGraphicsExtension">
+      <summary>
+            An extension that defines an ellipsoid to be drawn at the location
+            defined by <see cref="T:AGI.Foundation.Geometry.ILocationPointService" />.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.EllipsoidGraphicsExtension.#ctor">
+      <summary>
+            Initializes a new instance.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.EllipsoidGraphicsExtension.#ctor(AGI.Foundation.Cesium.EllipsoidGraphics)">
+      <summary>
+            Initializes a new instance with the provided <see cref="P:AGI.Foundation.Cesium.EllipsoidGraphicsExtension.EllipsoidGraphics" />.
+            </summary>
+      <param name="ellipsoid">The graphical properties of the ellipsoid.</param>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.EllipsoidGraphicsExtension.#ctor(AGI.Foundation.Cesium.EllipsoidGraphicsExtension,AGI.Foundation.Infrastructure.CopyContext)">
+      <summary>
+            Initializes a new instance as a copy of an existing instance.
+            </summary>
+      <param name="existingInstance">The existing instance to copy.</param>
+      <param name="context">A <see cref="T:AGI.Foundation.Infrastructure.CopyContext" /> that controls the depth of the copy.</param>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.EllipsoidGraphicsExtension.CheckForSameDefinition(AGI.Foundation.Cesium.EllipsoidGraphicsExtension)">
+      <summary>
+        Checks to determine if another instance has the same definition as this instance and
+        returns true if it does.  Derived classes MUST override this method and check
+        all new fields introduced by the derived class for definitional equivalence.  It is NOT necessary
+        to check base class fields because the base class will already have done that.  When overriding this method,
+        you should NOT call the base implementation because it will return false for all derived-class instances.
+        Derived classes should check the type of <paramref name="other" /> to preserve the symmetric nature of <see cref="M:AGI.Foundation.Infrastructure.IEquatableDefinition.IsSameDefinition(System.Object)" />.
+      </summary>
+      <param name="other">The other instance to compare to this one.</param>
+      <returns>
+        true if the two objects are defined equivalently, otherwise false.
+      </returns>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.EllipsoidGraphicsExtension.CheckForSameDefinition(AGI.Foundation.Infrastructure.ObjectExtension)">
+      <summary>
+        Checks to determine if another instance has the same definition as this instance and
+        returns true if it does.  Derived classes MUST override this method and check
+        all new fields introduced by the derived class for definitional equivalence.  It is NOT necessary
+        to check base class fields because the base class will already have done that.  When overriding this method,
+        you should NOT call the base implementation because it will return false for all derived-class instances.
+        Derived classes should check the type of <paramref name="other" /> to preserve the symmetric nature of <see cref="M:AGI.Foundation.Infrastructure.IEquatableDefinition.IsSameDefinition(System.Object)" />.
+      </summary>
+      <param name="other">The other instance to compare to this one.</param>
+      <returns>
+        true if the two objects are defined equivalently, otherwise false.
+      </returns>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.EllipsoidGraphicsExtension.Clone(AGI.Foundation.Infrastructure.CopyContext)">
+      <summary>
+      Clones this object using the specified context.
+    </summary>
+      <param name="context">The context to use to perform the copy.</param>
+      <returns>
+      A new instance which is a copy of this object.
+    </returns>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.EllipsoidGraphicsExtension.ComputeCurrentDefinitionHashCode">
+      <summary>
+        Computes a hash code based on the current properties of this object. Derived classes MUST override this
+        method and compute a hash code that combines: a unique hash code seed, the base implementation result, and
+        the hash codes of all new fields introduced by the derived class which are used in the
+        <see cref="M:AGI.Foundation.Infrastructure.DefinitionalObject.CheckForSameDefinition(AGI.Foundation.Infrastructure.DefinitionalObject)" /> method.
+      </summary>
+      <returns>The computed hash code.</returns>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.EllipsoidGraphicsExtension.EllipsoidGraphics">
+      <summary>
+            Gets or sets the graphical properties of the ellipsoid.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.EllipsoidGraphicsExtension.EnumerateDependencies(AGI.Foundation.Infrastructure.DependencyEnumerator)">
+      <summary>
+        Enumerates the dependencies of this object by calling
+        <see cref="M:AGI.Foundation.Infrastructure.DependencyEnumerator.Enumerate``1(``0)" /> for each object that this object directly depends upon.
+        Derived classes which contain additional dependencies MUST override this method, call the base
+        implementation, and enumerate dependencies introduced by the derived class.
+      </summary>
+      <param name="enumerator">The enumerator that is informed of the dependencies of this object.</param>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.FieldOfViewGraphicsExtension">
+      <summary>
+            An extension that defines the graphical properties of a sensor defined by a
+            <see cref="T:AGI.Foundation.Geometry.Shapes.IFieldOfViewService" /> positions by <see cref="T:AGI.Foundation.Geometry.ILocationPointService" />
+            and oriented by <see cref="T:AGI.Foundation.Geometry.IOrientationAxesService" /></summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.FieldOfViewGraphicsExtension.#ctor">
+      <summary>
+            Creates a new instance.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.FieldOfViewGraphicsExtension.#ctor(AGI.Foundation.Cesium.FieldOfViewGraphicsExtension,AGI.Foundation.Infrastructure.CopyContext)">
+      <summary>
+            Initializes a new instance as a copy of an existing instance.
+            </summary>
+      <param name="existingInstance">The existing instance to copy.</param>
+      <param name="context">A <see cref="T:AGI.Foundation.Infrastructure.CopyContext" /> that controls the depth of the copy</param>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.FieldOfViewGraphicsExtension.#ctor(AGI.Foundation.Cesium.SensorFieldOfViewGraphics)">
+      <summary>
+            Initializes a new instance with the provided <see cref="P:AGI.Foundation.Cesium.FieldOfViewGraphicsExtension.FieldOfViewGraphics" />.
+            </summary>
+      <param name="fieldOfView">The graphical properties of the sensor.</param>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.FieldOfViewGraphicsExtension.CheckForSameDefinition(AGI.Foundation.Cesium.FieldOfViewGraphicsExtension)">
+      <summary>
+        Checks to determine if another instance has the same definition as this instance and
+        returns true if it does.  Derived classes MUST override this method and check
+        all new fields introduced by the derived class for definitional equivalence.  It is NOT necessary
+        to check base class fields because the base class will already have done that.  When overriding this method,
+        you should NOT call the base implementation because it will return false for all derived-class instances.
+        Derived classes should check the type of <paramref name="other" /> to preserve the symmetric nature of <see cref="M:AGI.Foundation.Infrastructure.IEquatableDefinition.IsSameDefinition(System.Object)" />.
+      </summary>
+      <param name="other">The other instance to compare to this one.</param>
+      <returns>
+        true if the two objects are defined equivalently, otherwise false.
+      </returns>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.FieldOfViewGraphicsExtension.CheckForSameDefinition(AGI.Foundation.Infrastructure.ObjectExtension)">
+      <summary>
+        Checks to determine if another instance has the same definition as this instance and
+        returns true if it does.  Derived classes MUST override this method and check
+        all new fields introduced by the derived class for definitional equivalence.  It is NOT necessary
+        to check base class fields because the base class will already have done that.  When overriding this method,
+        you should NOT call the base implementation because it will return false for all derived-class instances.
+        Derived classes should check the type of <paramref name="other" /> to preserve the symmetric nature of <see cref="M:AGI.Foundation.Infrastructure.IEquatableDefinition.IsSameDefinition(System.Object)" />.
+      </summary>
+      <param name="other">The other instance to compare to this one.</param>
+      <returns>
+        true if the two objects are defined equivalently, otherwise false.
+      </returns>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.FieldOfViewGraphicsExtension.Clone(AGI.Foundation.Infrastructure.CopyContext)">
+      <summary>
+      Clones this object using the specified context.
+    </summary>
+      <param name="context">The context to use to perform the copy.</param>
+      <returns>
+      A new instance which is a copy of this object.
+    </returns>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.FieldOfViewGraphicsExtension.ComputeCurrentDefinitionHashCode">
+      <summary>
+        Computes a hash code based on the current properties of this object. Derived classes MUST override this
+        method and compute a hash code that combines: a unique hash code seed, the base implementation result, and
+        the hash codes of all new fields introduced by the derived class which are used in the
+        <see cref="M:AGI.Foundation.Infrastructure.DefinitionalObject.CheckForSameDefinition(AGI.Foundation.Infrastructure.DefinitionalObject)" /> method.
+      </summary>
+      <returns>The computed hash code.</returns>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.FieldOfViewGraphicsExtension.EnumerateDependencies(AGI.Foundation.Infrastructure.DependencyEnumerator)">
+      <summary>
+        Enumerates the dependencies of this object by calling
+        <see cref="M:AGI.Foundation.Infrastructure.DependencyEnumerator.Enumerate``1(``0)" /> for each object that this object directly depends upon.
+        Derived classes which contain additional dependencies MUST override this method, call the base
+        implementation, and enumerate dependencies introduced by the derived class.
+      </summary>
+      <param name="enumerator">The enumerator that is informed of the dependencies of this object.</param>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.FieldOfViewGraphicsExtension.FieldOfViewGraphics">
+      <summary>
+            Gets or sets the graphical properties of the sensor.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.GraphicalVector">
+      <summary>
+            An <see cref="T:AGI.Foundation.Infrastructure.ExtensibleObject" /> that describes a vector defined by
+            <see cref="T:AGI.Foundation.Geometry.IVectorService" />, <see cref="T:AGI.Foundation.Cesium.Advanced.IVectorGraphicsService" />
+            and <see cref="T:AGI.Foundation.Geometry.ILocationPointService" />.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.GraphicalVector.#ctor">
+      <summary>Initializes a new instance.</summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.GraphicalVector.#ctor(AGI.Foundation.Cesium.GraphicalVector,AGI.Foundation.Infrastructure.CopyContext)">
+      <summary>Initializes a new instance as a copy of an existing instance.</summary>
+      <param name="existingInstance">The existing instance to copy.</param>
+      <param name="context">
+      A <see cref="T:AGI.Foundation.Infrastructure.CopyContext" /> that controls the depth of the copy.
+    </param>
+      <exception cref="T:System.ArgumentNullException">
+      Thrown when the parameter <paramref name="existingInstance" /> is null.
+    </exception>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.GraphicalVector.#ctor(AGI.Foundation.Geometry.Vector,AGI.Foundation.Cesium.VectorGraphics,AGI.Foundation.Geometry.Point)">
+      <summary>
+            Initializes a new instance specifying all parameters.
+            </summary>
+      <param name="vector">The vector to draw.</param>
+      <param name="locationPoint">The point where the vector will be drawn.</param>
+      <param name="graphics">The vector graphics.</param>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.GraphicalVector.CheckForSameDefinition(AGI.Foundation.Cesium.GraphicalVector)">
+      <summary>
+        Checks to determine if another instance has the same definition as this instance and
+        returns true if it does.  Derived classes MUST override this method and check
+        all new fields introduced by the derived class for definitional equivalence.  It is NOT necessary
+        to check base class fields because the base class will already have done that.  When overriding this method,
+        you should NOT call the base implementation because it will return false for all derived-class instances.
+        Derived classes should check the type of <paramref name="other" /> to preserve the symmetric nature of <see cref="M:AGI.Foundation.Infrastructure.IEquatableDefinition.IsSameDefinition(System.Object)" />.
+      </summary>
+      <param name="other">The other instance to compare to this one.</param>
+      <returns>
+        true if the two objects are defined equivalently, otherwise false.
+      </returns>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.GraphicalVector.CheckForSameDefinition(AGI.Foundation.Infrastructure.ExtensibleObject)">
+      <summary>
+        Checks to determine if another instance has the same definition as this instance and
+        returns true if it does.  Derived classes MUST override this method and check
+        all new fields introduced by the derived class for definitional equivalence.  It is NOT necessary
+        to check base class fields because the base class will already have done that.  When overriding this method,
+        you should NOT call the base implementation because it will return false for all derived-class instances.
+        Derived classes should check the type of <paramref name="other" /> to preserve the symmetric nature of <see cref="M:AGI.Foundation.Infrastructure.IEquatableDefinition.IsSameDefinition(System.Object)" />.
+      </summary>
+      <param name="other">The other instance to compare to this one.</param>
+      <returns>
+        true if the two objects are defined equivalently, otherwise false.
+      </returns>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.GraphicalVector.Clone(AGI.Foundation.Infrastructure.CopyContext)">
+      <summary>
+      Clones this object using the specified context.
+    </summary>
+      <param name="context">The context to use to perform the copy.</param>
+      <returns>
+      A new instance which is a copy of this object.
+    </returns>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.GraphicalVector.ComputeCurrentDefinitionHashCode">
+      <summary>
+        Computes a hash code based on the current properties of this object. Derived classes MUST override this
+        method and compute a hash code that combines: a unique hash code seed, the base implementation result, and
+        the hash codes of all new fields introduced by the derived class which are used in the
+        <see cref="M:AGI.Foundation.Infrastructure.DefinitionalObject.CheckForSameDefinition(AGI.Foundation.Infrastructure.DefinitionalObject)" /> method.
+      </summary>
+      <returns>The computed hash code.</returns>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.GraphicalVector.EnumerateDependencies(AGI.Foundation.Infrastructure.DependencyEnumerator)">
+      <summary>
+        Enumerates the dependencies of this object by calling
+        <see cref="M:AGI.Foundation.Infrastructure.DependencyEnumerator.Enumerate``1(``0)" /> for each object that this object directly depends upon.
+        Derived classes which contain additional dependencies MUST override this method, call the base
+        implementation, and enumerate dependencies introduced by the derived class.
+      </summary>
+      <param name="enumerator">The enumerator that is informed of the dependencies of this object.</param>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.GraphicalVector.LocationPoint">
+      <summary>
+            Gets or sets the point defining the the tail end of the vector.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.GraphicalVector.Vector">
+      <summary>
+            Gets or sets the vector.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.GraphicalVector.VectorGraphics">
+      <summary>
+            Gets or sets the vector graphics.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.GridMaterialGraphics">
+      <summary>
+            Describes graphical properties of a material that represents a two-dimensional grid.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.GridMaterialGraphics.#ctor">
+      <summary>
+            Initializes a new instance.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.GridMaterialGraphics.CellAlpha">
+      <summary>
+            Gets or sets the alpha value of grid cells, this is combined with the overall alpha specified in <see cref="P:AGI.Foundation.Cesium.GridMaterialGraphics.Color" />.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.GridMaterialGraphics.Color">
+      <summary>
+            Gets or sets the color of the grid.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.GridMaterialGraphics.LineCount">
+      <summary>
+            Gets or sets the number of rows and columns in the grid.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.GridMaterialGraphics.LineOffset">
+      <summary>
+            Gets or sets the offset of grid lines as a percentage from 0 to 1.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.GridMaterialGraphics.LineThickness">
+      <summary>
+            Gets or sets the thickness of grid lines, in pixels.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.LabelGraphics">
+      <summary>
+            Defines the graphical properties of a label.  A label is viewport-aligned text positioned in the scene.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.LabelGraphics.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:AGI.Foundation.Cesium.LabelGraphics" /> class</summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.LabelGraphics.EyeOffset">
+      <summary>
+            Gets or sets the label's offset from the origin in eye coordinates.
+            Eye coordinates are specified in a left-handed coordinate system where <code>X</code>
+            points toward the viewer's right, <code>Y</code> points up, and <code>Z</code>
+            points into the screen.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.LabelGraphics.FillColor">
+      <summary>
+            Gets or sets the fill color of the label.
+            This property only has an effect if <see cref="P:AGI.Foundation.Cesium.LabelGraphics.Style" /> is <see cref="F:AGI.Foundation.Cesium.CesiumLabelStyle.Fill" /> or
+            <see cref="F:AGI.Foundation.Cesium.CesiumLabelStyle.FillAndOutline" />.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.LabelGraphics.Font">
+      <summary>
+            Gets or sets the font of the label.
+            The format of the string is expected to be a CSS font property.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.LabelGraphics.HorizontalOrigin">
+      <summary>
+            Gets or sets whether the label is left, center, or right-aligned with the origin.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.LabelGraphics.OutlineColor">
+      <summary>
+            Gets or sets the outline color of the label.
+            This property only has an effect if <see cref="P:AGI.Foundation.Cesium.LabelGraphics.Style" /> is <see cref="F:AGI.Foundation.Cesium.CesiumLabelStyle.Outline" /> or
+            <see cref="F:AGI.Foundation.Cesium.CesiumLabelStyle.FillAndOutline" />.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.LabelGraphics.OutlineWidth">
+      <summary>
+            Gets or sets the outline width of the label.
+            This property only has an effect if <see cref="P:AGI.Foundation.Cesium.LabelGraphics.Style" /> is <see cref="F:AGI.Foundation.Cesium.CesiumLabelStyle.Outline" /> or
+            <see cref="F:AGI.Foundation.Cesium.CesiumLabelStyle.FillAndOutline" />.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.LabelGraphics.PixelOffset">
+      <summary>
+            Gets or sets the label's offset from the origin in pixel coordinates.
+            The <code>Y</code> coordinate moves the label upwards, and the <code>X</code>
+            coordinate moves the label to the right.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.LabelGraphics.Scale">
+      <summary>
+            Gets or sets the scale of the label text.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.LabelGraphics.Show">
+      <summary>
+            Gets or sets whether or not the label is shown.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.LabelGraphics.Style">
+      <summary>
+            Gets or sets the style of the label.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.LabelGraphics.Text">
+      <summary>
+            Gets or sets the text of the label.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.LabelGraphics.VerticalOrigin">
+      <summary>
+            Gets or sets whether the label is bottom, center, or top-aligned with the origin.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.LabelGraphicsExtension">
+      <summary>
+            An extension that defines a label to be drawn at the location
+            defined by <see cref="T:AGI.Foundation.Geometry.ILocationPointService" />.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.LabelGraphicsExtension.#ctor">
+      <summary>
+            Initializes a new instance.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.LabelGraphicsExtension.#ctor(AGI.Foundation.Cesium.LabelGraphics)">
+      <summary>
+            Initializes a new instance with the provided <see cref="P:AGI.Foundation.Cesium.LabelGraphicsExtension.LabelGraphics" />.
+            </summary>
+      <param name="label">The graphical properties of the label.</param>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.LabelGraphicsExtension.#ctor(AGI.Foundation.Cesium.LabelGraphicsExtension,AGI.Foundation.Infrastructure.CopyContext)">
+      <summary>
+            Initializes a new instance as a copy of an existing instance.
+            </summary>
+      <param name="existingInstance">The existing instance to copy.</param>
+      <param name="context">A <see cref="T:AGI.Foundation.Infrastructure.CopyContext" /> that controls the depth of the copy.</param>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.LabelGraphicsExtension.CheckForSameDefinition(AGI.Foundation.Cesium.LabelGraphicsExtension)">
+      <summary>
+        Checks to determine if another instance has the same definition as this instance and
+        returns true if it does.  Derived classes MUST override this method and check
+        all new fields introduced by the derived class for definitional equivalence.  It is NOT necessary
+        to check base class fields because the base class will already have done that.  When overriding this method,
+        you should NOT call the base implementation because it will return false for all derived-class instances.
+        Derived classes should check the type of <paramref name="other" /> to preserve the symmetric nature of <see cref="M:AGI.Foundation.Infrastructure.IEquatableDefinition.IsSameDefinition(System.Object)" />.
+      </summary>
+      <param name="other">The other instance to compare to this one.</param>
+      <returns>
+        true if the two objects are defined equivalently, otherwise false.
+      </returns>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.LabelGraphicsExtension.CheckForSameDefinition(AGI.Foundation.Infrastructure.ObjectExtension)">
+      <summary>
+        Checks to determine if another instance has the same definition as this instance and
+        returns true if it does.  Derived classes MUST override this method and check
+        all new fields introduced by the derived class for definitional equivalence.  It is NOT necessary
+        to check base class fields because the base class will already have done that.  When overriding this method,
+        you should NOT call the base implementation because it will return false for all derived-class instances.
+        Derived classes should check the type of <paramref name="other" /> to preserve the symmetric nature of <see cref="M:AGI.Foundation.Infrastructure.IEquatableDefinition.IsSameDefinition(System.Object)" />.
+      </summary>
+      <param name="other">The other instance to compare to this one.</param>
+      <returns>
+        true if the two objects are defined equivalently, otherwise false.
+      </returns>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.LabelGraphicsExtension.Clone(AGI.Foundation.Infrastructure.CopyContext)">
+      <summary>
+      Clones this object using the specified context.
+    </summary>
+      <param name="context">The context to use to perform the copy.</param>
+      <returns>
+      A new instance which is a copy of this object.
+    </returns>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.LabelGraphicsExtension.ComputeCurrentDefinitionHashCode">
+      <summary>
+        Computes a hash code based on the current properties of this object. Derived classes MUST override this
+        method and compute a hash code that combines: a unique hash code seed, the base implementation result, and
+        the hash codes of all new fields introduced by the derived class which are used in the
+        <see cref="M:AGI.Foundation.Infrastructure.DefinitionalObject.CheckForSameDefinition(AGI.Foundation.Infrastructure.DefinitionalObject)" /> method.
+      </summary>
+      <returns>The computed hash code.</returns>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.LabelGraphicsExtension.EnumerateDependencies(AGI.Foundation.Infrastructure.DependencyEnumerator)">
+      <summary>
+        Enumerates the dependencies of this object by calling
+        <see cref="M:AGI.Foundation.Infrastructure.DependencyEnumerator.Enumerate``1(``0)" /> for each object that this object directly depends upon.
+        Derived classes which contain additional dependencies MUST override this method, call the base
+        implementation, and enumerate dependencies introduced by the derived class.
+      </summary>
+      <param name="enumerator">The enumerator that is informed of the dependencies of this object.</param>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.LabelGraphicsExtension.LabelGraphics">
+      <summary>
+            Gets or sets the graphical properties of the label.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.LinkGraphics">
+      <summary>
+            Defines the graphical properties of a line connecting the transmitter and receiver
+            of an object providing the <see cref="T:AGI.Foundation.Access.ILinkService" />.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.LinkGraphics.#ctor">
+      <summary>
+            Creates a new instance.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.LinkGraphics.FollowSurface">
+      <summary>
+            Gets or sets whether or not the line should follow follow the curve of the central body.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.LinkGraphics.Material">
+      <summary>
+            Gets or sets the material used to draw the line.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.LinkGraphics.Show">
+      <summary>
+            Gets or sets whether or not the line is shown.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.LinkGraphics.Width">
+      <summary>
+            Gets or sets the width of the line.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.LinkGraphicsExtension">
+      <summary>
+            An extension that defines the graphical properties of a line connecting the
+            transmitter and receiver of an object providing the <see cref="T:AGI.Foundation.Access.ILinkService" />.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.LinkGraphicsExtension.#ctor">
+      <summary>
+            Initializes a new instance.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.LinkGraphicsExtension.#ctor(AGI.Foundation.Cesium.LinkGraphics)">
+      <summary>
+            Initializes a new instance with the provided <see cref="P:AGI.Foundation.Cesium.LinkGraphicsExtension.LinkGraphics" />.
+            </summary>
+      <param name="polyline">The graphical properties of the link.</param>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.LinkGraphicsExtension.#ctor(AGI.Foundation.Cesium.LinkGraphicsExtension,AGI.Foundation.Infrastructure.CopyContext)">
+      <summary>
+            Initializes a new instance as a copy of an existing instance.
+            </summary>
+      <param name="existingInstance">The existing instance to copy.</param>
+      <param name="context">A <see cref="T:AGI.Foundation.Infrastructure.CopyContext" /> that controls the depth of the copy.</param>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.LinkGraphicsExtension.CheckForSameDefinition(AGI.Foundation.Cesium.LinkGraphicsExtension)">
+      <summary>
+        Checks to determine if another instance has the same definition as this instance and
+        returns true if it does.  Derived classes MUST override this method and check
+        all new fields introduced by the derived class for definitional equivalence.  It is NOT necessary
+        to check base class fields because the base class will already have done that.  When overriding this method,
+        you should NOT call the base implementation because it will return false for all derived-class instances.
+        Derived classes should check the type of <paramref name="other" /> to preserve the symmetric nature of <see cref="M:AGI.Foundation.Infrastructure.IEquatableDefinition.IsSameDefinition(System.Object)" />.
+      </summary>
+      <param name="other">The other instance to compare to this one.</param>
+      <returns>
+        true if the two objects are defined equivalently, otherwise false.
+      </returns>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.LinkGraphicsExtension.CheckForSameDefinition(AGI.Foundation.Infrastructure.ObjectExtension)">
+      <summary>
+        Checks to determine if another instance has the same definition as this instance and
+        returns true if it does.  Derived classes MUST override this method and check
+        all new fields introduced by the derived class for definitional equivalence.  It is NOT necessary
+        to check base class fields because the base class will already have done that.  When overriding this method,
+        you should NOT call the base implementation because it will return false for all derived-class instances.
+        Derived classes should check the type of <paramref name="other" /> to preserve the symmetric nature of <see cref="M:AGI.Foundation.Infrastructure.IEquatableDefinition.IsSameDefinition(System.Object)" />.
+      </summary>
+      <param name="other">The other instance to compare to this one.</param>
+      <returns>
+        true if the two objects are defined equivalently, otherwise false.
+      </returns>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.LinkGraphicsExtension.Clone(AGI.Foundation.Infrastructure.CopyContext)">
+      <summary>
+      Clones this object using the specified context.
+    </summary>
+      <param name="context">The context to use to perform the copy.</param>
+      <returns>
+      A new instance which is a copy of this object.
+    </returns>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.LinkGraphicsExtension.ComputeCurrentDefinitionHashCode">
+      <summary>
+        Computes a hash code based on the current properties of this object. Derived classes MUST override this
+        method and compute a hash code that combines: a unique hash code seed, the base implementation result, and
+        the hash codes of all new fields introduced by the derived class which are used in the
+        <see cref="M:AGI.Foundation.Infrastructure.DefinitionalObject.CheckForSameDefinition(AGI.Foundation.Infrastructure.DefinitionalObject)" /> method.
+      </summary>
+      <returns>The computed hash code.</returns>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.LinkGraphicsExtension.EnumerateDependencies(AGI.Foundation.Infrastructure.DependencyEnumerator)">
+      <summary>
+        Enumerates the dependencies of this object by calling
+        <see cref="M:AGI.Foundation.Infrastructure.DependencyEnumerator.Enumerate``1(``0)" /> for each object that this object directly depends upon.
+        Derived classes which contain additional dependencies MUST override this method, call the base
+        implementation, and enumerate dependencies introduced by the derived class.
+      </summary>
+      <param name="enumerator">The enumerator that is informed of the dependencies of this object.</param>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.LinkGraphicsExtension.LinkGraphics">
+      <summary>
+            Gets or sets the graphical properties of the link.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.ModelGraphics">
+      <summary>
+            Defines the graphical properties of a glTF model.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.ModelGraphics.#ctor">
+      <summary>
+            Creates a new instance
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.ModelGraphics.Model">
+      <summary>
+            Gets or sets the url of the glTF file.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.ModelGraphics.Scale">
+      <summary>
+            Gets or sets the scale of the model.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.ModelGraphics.Show">
+      <summary>
+            Gets or sets whether or not the model is shown.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.ModelGraphicsExtension">
+      <summary>
+            An extension that defines the graphics of a model drawn at
+            the location defined by <see cref="T:AGI.Foundation.Geometry.ILocationPointService" />
+            and oriented by <see cref="T:AGI.Foundation.Geometry.IOrientationAxesService" />.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.ModelGraphicsExtension.#ctor">
+      <summary>
+            Initializes a new instance.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.ModelGraphicsExtension.#ctor(AGI.Foundation.Cesium.ModelGraphics)">
+      <summary>
+            Initializes a new instance with the provided <see cref="P:AGI.Foundation.Cesium.ModelGraphicsExtension.ModelGraphics" />.
+            </summary>
+      <param name="model">The graphical properties of the model.</param>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.ModelGraphicsExtension.#ctor(AGI.Foundation.Cesium.ModelGraphicsExtension,AGI.Foundation.Infrastructure.CopyContext)">
+      <summary>
+            Initializes a new instance as a copy of an existing instance.
+            </summary>
+      <param name="existingInstance">The existing instance to copy.</param>
+      <param name="context">A <see cref="T:AGI.Foundation.Infrastructure.CopyContext" /> that controls the depth of the copy.</param>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.ModelGraphicsExtension.CheckForSameDefinition(AGI.Foundation.Cesium.ModelGraphicsExtension)">
+      <summary>
+        Checks to determine if another instance has the same definition as this instance and
+        returns true if it does.  Derived classes MUST override this method and check
+        all new fields introduced by the derived class for definitional equivalence.  It is NOT necessary
+        to check base class fields because the base class will already have done that.  When overriding this method,
+        you should NOT call the base implementation because it will return false for all derived-class instances.
+        Derived classes should check the type of <paramref name="other" /> to preserve the symmetric nature of <see cref="M:AGI.Foundation.Infrastructure.IEquatableDefinition.IsSameDefinition(System.Object)" />.
+      </summary>
+      <param name="other">The other instance to compare to this one.</param>
+      <returns>
+        true if the two objects are defined equivalently, otherwise false.
+      </returns>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.ModelGraphicsExtension.CheckForSameDefinition(AGI.Foundation.Infrastructure.ObjectExtension)">
+      <summary>
+        Checks to determine if another instance has the same definition as this instance and
+        returns true if it does.  Derived classes MUST override this method and check
+        all new fields introduced by the derived class for definitional equivalence.  It is NOT necessary
+        to check base class fields because the base class will already have done that.  When overriding this method,
+        you should NOT call the base implementation because it will return false for all derived-class instances.
+        Derived classes should check the type of <paramref name="other" /> to preserve the symmetric nature of <see cref="M:AGI.Foundation.Infrastructure.IEquatableDefinition.IsSameDefinition(System.Object)" />.
+      </summary>
+      <param name="other">The other instance to compare to this one.</param>
+      <returns>
+        true if the two objects are defined equivalently, otherwise false.
+      </returns>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.ModelGraphicsExtension.Clone(AGI.Foundation.Infrastructure.CopyContext)">
+      <summary>
+      Clones this object using the specified context.
+    </summary>
+      <param name="context">The context to use to perform the copy.</param>
+      <returns>
+      A new instance which is a copy of this object.
+    </returns>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.ModelGraphicsExtension.ComputeCurrentDefinitionHashCode">
+      <summary>
+        Computes a hash code based on the current properties of this object. Derived classes MUST override this
+        method and compute a hash code that combines: a unique hash code seed, the base implementation result, and
+        the hash codes of all new fields introduced by the derived class which are used in the
+        <see cref="M:AGI.Foundation.Infrastructure.DefinitionalObject.CheckForSameDefinition(AGI.Foundation.Infrastructure.DefinitionalObject)" /> method.
+      </summary>
+      <returns>The computed hash code.</returns>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.ModelGraphicsExtension.EnumerateDependencies(AGI.Foundation.Infrastructure.DependencyEnumerator)">
+      <summary>
+        Enumerates the dependencies of this object by calling
+        <see cref="M:AGI.Foundation.Infrastructure.DependencyEnumerator.Enumerate``1(``0)" /> for each object that this object directly depends upon.
+        Derived classes which contain additional dependencies MUST override this method, call the base
+        implementation, and enumerate dependencies introduced by the derived class.
+      </summary>
+      <param name="enumerator">The enumerator that is informed of the dependencies of this object.</param>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.ModelGraphicsExtension.ModelGraphics">
+      <summary>
+            Gets or sets the graphical properties of the model.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.PathGraphics">
+      <summary>
+            Defines the graphical properties of a moving object over time.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.PathGraphics.#ctor">
+      <summary>
+            Creates a new instance.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.PathGraphics.LeadTime">
+      <summary>
+            Gets or sets the lead time of the path, in seconds.  The lead time
+            is the amount of time ahead of the current position that the path extends
+            in front of the object.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.PathGraphics.Material">
+      <summary>
+            Gets or sets the material used to draw the path.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.PathGraphics.Resolution">
+      <summary>
+            Gets or sets the resolution of the path, in seconds.
+            This value is the minimum step size the client will take when sampling the
+            position of the object to create the path.  Lower numbers provide improved
+            visual fidelity at the cost of rendering performance.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.PathGraphics.Show">
+      <summary>
+            Gets or sets whether or not the path is shown.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.PathGraphics.TrailTime">
+      <summary>
+            Gets or sets the trail time of the path, in seconds.  The trail time
+            is the amount of time behind of the current position that the path extends
+            behind the object.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.PathGraphics.Width">
+      <summary>
+            Gets or sets the width of the path.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.PathGraphicsExtension">
+      <summary>
+            An extension that defines the graphical properties of the path created by
+            a <see cref="T:AGI.Foundation.Geometry.ILocationPointService" /> over time.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.PathGraphicsExtension.#ctor">
+      <summary>
+            Initializes a new instance.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.PathGraphicsExtension.#ctor(AGI.Foundation.Cesium.PathGraphics)">
+      <summary>
+            Initializes a new instance with the provided <see cref="P:AGI.Foundation.Cesium.PathGraphicsExtension.PathGraphics" />.
+            </summary>
+      <param name="path">The graphical properties of the path.</param>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.PathGraphicsExtension.#ctor(AGI.Foundation.Cesium.PathGraphicsExtension,AGI.Foundation.Infrastructure.CopyContext)">
+      <summary>
+            Initializes a new instance as a copy of an existing instance.
+            </summary>
+      <param name="existingInstance">The existing instance to copy.</param>
+      <param name="context">A <see cref="T:AGI.Foundation.Infrastructure.CopyContext" /> that controls the depth of the copy.</param>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.PathGraphicsExtension.CheckForSameDefinition(AGI.Foundation.Cesium.PathGraphicsExtension)">
+      <summary>
+        Checks to determine if another instance has the same definition as this instance and
+        returns true if it does.  Derived classes MUST override this method and check
+        all new fields introduced by the derived class for definitional equivalence.  It is NOT necessary
+        to check base class fields because the base class will already have done that.  When overriding this method,
+        you should NOT call the base implementation because it will return false for all derived-class instances.
+        Derived classes should check the type of <paramref name="other" /> to preserve the symmetric nature of <see cref="M:AGI.Foundation.Infrastructure.IEquatableDefinition.IsSameDefinition(System.Object)" />.
+      </summary>
+      <param name="other">The other instance to compare to this one.</param>
+      <returns>
+        true if the two objects are defined equivalently, otherwise false.
+      </returns>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.PathGraphicsExtension.CheckForSameDefinition(AGI.Foundation.Infrastructure.ObjectExtension)">
+      <summary>
+        Checks to determine if another instance has the same definition as this instance and
+        returns true if it does.  Derived classes MUST override this method and check
+        all new fields introduced by the derived class for definitional equivalence.  It is NOT necessary
+        to check base class fields because the base class will already have done that.  When overriding this method,
+        you should NOT call the base implementation because it will return false for all derived-class instances.
+        Derived classes should check the type of <paramref name="other" /> to preserve the symmetric nature of <see cref="M:AGI.Foundation.Infrastructure.IEquatableDefinition.IsSameDefinition(System.Object)" />.
+      </summary>
+      <param name="other">The other instance to compare to this one.</param>
+      <returns>
+        true if the two objects are defined equivalently, otherwise false.
+      </returns>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.PathGraphicsExtension.Clone(AGI.Foundation.Infrastructure.CopyContext)">
+      <summary>
+      Clones this object using the specified context.
+    </summary>
+      <param name="context">The context to use to perform the copy.</param>
+      <returns>
+      A new instance which is a copy of this object.
+    </returns>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.PathGraphicsExtension.ComputeCurrentDefinitionHashCode">
+      <summary>
+        Computes a hash code based on the current properties of this object. Derived classes MUST override this
+        method and compute a hash code that combines: a unique hash code seed, the base implementation result, and
+        the hash codes of all new fields introduced by the derived class which are used in the
+        <see cref="M:AGI.Foundation.Infrastructure.DefinitionalObject.CheckForSameDefinition(AGI.Foundation.Infrastructure.DefinitionalObject)" /> method.
+      </summary>
+      <returns>The computed hash code.</returns>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.PathGraphicsExtension.EnumerateDependencies(AGI.Foundation.Infrastructure.DependencyEnumerator)">
+      <summary>
+        Enumerates the dependencies of this object by calling
+        <see cref="M:AGI.Foundation.Infrastructure.DependencyEnumerator.Enumerate``1(``0)" /> for each object that this object directly depends upon.
+        Derived classes which contain additional dependencies MUST override this method, call the base
+        implementation, and enumerate dependencies introduced by the derived class.
+      </summary>
+      <param name="enumerator">The enumerator that is informed of the dependencies of this object.</param>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.PathGraphicsExtension.PathGraphics">
+      <summary>
+            Gets or sets the graphical properties of the path.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.PointGraphics">
+      <summary>
+            Defines the graphical properties of a point over time.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.PointGraphics.#ctor">
+      <summary>
+            Creates a new instance.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.PointGraphics.Color">
+      <summary>
+            Gets or sets the color of the point.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.PointGraphics.OutlineColor">
+      <summary>
+            Gets or sets the outline color of the point.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.PointGraphics.OutlineWidth">
+      <summary>
+            Gets or sets the outline width of the point, in pixels.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.PointGraphics.PixelSize">
+      <summary>
+            Gets or sets the size of the point.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.PointGraphics.Show">
+      <summary>
+            Gets or sets whether or not the point is shown.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.PointGraphicsExtension">
+      <summary>
+            An extension that defines a point to be drawn at the location
+            defined by <see cref="T:AGI.Foundation.Geometry.ILocationPointService" />.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.PointGraphicsExtension.#ctor">
+      <summary>
+            Initializes a new instance.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.PointGraphicsExtension.#ctor(AGI.Foundation.Cesium.PointGraphics)">
+      <summary>
+            Initializes a new instance with the provided <see cref="P:AGI.Foundation.Cesium.PointGraphicsExtension.PointGraphics" />.
+            </summary>
+      <param name="pointGraphics">The graphical properties of the point.</param>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.PointGraphicsExtension.#ctor(AGI.Foundation.Cesium.PointGraphicsExtension,AGI.Foundation.Infrastructure.CopyContext)">
+      <summary>
+            Initializes a new instance as a copy of an existing instance.
+            </summary>
+      <param name="existingInstance">The existing instance to copy.</param>
+      <param name="context">A <see cref="T:AGI.Foundation.Infrastructure.CopyContext" /> that controls the depth of the copy.</param>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.PointGraphicsExtension.CheckForSameDefinition(AGI.Foundation.Cesium.PointGraphicsExtension)">
+      <summary>
+        Checks to determine if another instance has the same definition as this instance and
+        returns true if it does.  Derived classes MUST override this method and check
+        all new fields introduced by the derived class for definitional equivalence.  It is NOT necessary
+        to check base class fields because the base class will already have done that.  When overriding this method,
+        you should NOT call the base implementation because it will return false for all derived-class instances.
+        Derived classes should check the type of <paramref name="other" /> to preserve the symmetric nature of <see cref="M:AGI.Foundation.Infrastructure.IEquatableDefinition.IsSameDefinition(System.Object)" />.
+      </summary>
+      <param name="other">The other instance to compare to this one.</param>
+      <returns>
+        true if the two objects are defined equivalently, otherwise false.
+      </returns>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.PointGraphicsExtension.CheckForSameDefinition(AGI.Foundation.Infrastructure.ObjectExtension)">
+      <summary>
+        Checks to determine if another instance has the same definition as this instance and
+        returns true if it does.  Derived classes MUST override this method and check
+        all new fields introduced by the derived class for definitional equivalence.  It is NOT necessary
+        to check base class fields because the base class will already have done that.  When overriding this method,
+        you should NOT call the base implementation because it will return false for all derived-class instances.
+        Derived classes should check the type of <paramref name="other" /> to preserve the symmetric nature of <see cref="M:AGI.Foundation.Infrastructure.IEquatableDefinition.IsSameDefinition(System.Object)" />.
+      </summary>
+      <param name="other">The other instance to compare to this one.</param>
+      <returns>
+        true if the two objects are defined equivalently, otherwise false.
+      </returns>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.PointGraphicsExtension.Clone(AGI.Foundation.Infrastructure.CopyContext)">
+      <summary>
+      Clones this object using the specified context.
+    </summary>
+      <param name="context">The context to use to perform the copy.</param>
+      <returns>
+      A new instance which is a copy of this object.
+    </returns>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.PointGraphicsExtension.ComputeCurrentDefinitionHashCode">
+      <summary>
+        Computes a hash code based on the current properties of this object. Derived classes MUST override this
+        method and compute a hash code that combines: a unique hash code seed, the base implementation result, and
+        the hash codes of all new fields introduced by the derived class which are used in the
+        <see cref="M:AGI.Foundation.Infrastructure.DefinitionalObject.CheckForSameDefinition(AGI.Foundation.Infrastructure.DefinitionalObject)" /> method.
+      </summary>
+      <returns>The computed hash code.</returns>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.PointGraphicsExtension.EnumerateDependencies(AGI.Foundation.Infrastructure.DependencyEnumerator)">
+      <summary>
+        Enumerates the dependencies of this object by calling
+        <see cref="M:AGI.Foundation.Infrastructure.DependencyEnumerator.Enumerate``1(``0)" /> for each object that this object directly depends upon.
+        Derived classes which contain additional dependencies MUST override this method, call the base
+        implementation, and enumerate dependencies introduced by the derived class.
+      </summary>
+      <param name="enumerator">The enumerator that is informed of the dependencies of this object.</param>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.PointGraphicsExtension.PointGraphics">
+      <summary>
+            Gets or sets the graphical properties of the point.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.PolylineGlowMaterialGraphics">
+      <summary>
+            Describes graphical properties of a material that represents a glowing polyline.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.PolylineGlowMaterialGraphics.#ctor">
+      <summary>
+            Initializes a new instance.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.PolylineGlowMaterialGraphics.Color">
+      <summary>
+            Gets or sets the color of the line.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.PolylineGlowMaterialGraphics.GlowPower">
+      <summary>
+            Gets or sets the strength of the glow.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.PolylineOutlineMaterialGraphics">
+      <summary>
+            Describes graphical properties of a material that represents and outlined polyline.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.PolylineOutlineMaterialGraphics.#ctor">
+      <summary>
+            Initializes a new instance.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.PolylineOutlineMaterialGraphics.Color">
+      <summary>
+            Gets or sets the color of the line.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.PolylineOutlineMaterialGraphics.OutlineColor">
+      <summary>
+            Gets or sets the outline color of the line.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.PolylineOutlineMaterialGraphics.OutlineWidth">
+      <summary>
+            Gets or sets the outline width of the line.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.SampledCesiumProperty`1">
+      <summary>
+            A <see cref="T:AGI.Foundation.Cesium.Advanced.CesiumProperty`1" /> that specifies a number of time-tagged samples.  The samples
+            are interpolated to find the property value at a given time.
+            </summary>
+      <typeparam name="T">The type of value.</typeparam>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.SampledCesiumProperty`1.#ctor">
+      <summary>
+            Initializes a new instance.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.SampledCesiumProperty`1.#ctor(AGI.Foundation.DateMotionCollection{`0})">
+      <summary>
+            Initializes a new instance with the provided <see cref="T:AGI.Foundation.DateMotionCollection`1" />.
+            </summary>
+      <param name="samples">The samples.</param>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.SampledCesiumProperty`1.BackwardExtrapolationDuration">
+      <summary>
+            Gets or sets the amount of time to extrapolate backward before the property becomes undefined.  A value of 0 will extrapolate forever.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.SampledCesiumProperty`1.BackwardExtrapolationType">
+      <summary>
+            Gets or sets the type of extrapolation to perform when a value is requested at a time before any available samples.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.SampledCesiumProperty`1.ForwardExtrapolationDuration">
+      <summary>
+            Gets or sets the amount of time to extrapolate forward before the property becomes undefined.  A value of 0 will extrapolate forever.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.SampledCesiumProperty`1.ForwardExtrapolationType">
+      <summary>
+            Gets or sets the type of extrapolation to perform when a value is requested at a time after any available samples.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.SampledCesiumProperty`1.InterpolationAlgorithm">
+      <summary>
+            Gets or sets the algorithm to use for interpolation.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.SampledCesiumProperty`1.InterpolationDegree">
+      <summary>
+            Gets or sets the degree of the polynomial to use for interpolation.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.SampledCesiumProperty`1.op_Implicit(AGI.Foundation.DateMotionCollection{`0})~AGI.Foundation.Cesium.SampledCesiumProperty{`0}">
+      <summary>
+            Converts a <see cref="T:AGI.Foundation.DateMotionCollection`1" /> to a <see cref="T:AGI.Foundation.Cesium.SampledCesiumProperty`1" />.
+            </summary>
+      <param name="value">The value to convert</param>
+      <returns>The value wrapped in a <see cref="T:AGI.Foundation.Cesium.TimeIntervalCesiumProperty`1" />.</returns>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.SampledCesiumProperty`1.Samples">
+      <summary>
+            Gets or sets the samples.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.SensorFieldOfViewGraphics">
+      <summary>
+            Defines the graphical properties of a <see cref="T:AGI.Foundation.Geometry.Shapes.SensorFieldOfView" />.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.SensorFieldOfViewGraphics.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:AGI.Foundation.Cesium.SensorFieldOfViewGraphics" /> class</summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.SensorFieldOfViewGraphics.DomeSurfaceMaterial">
+      <summary>
+            Gets or sets the material used to fill dome surfaces.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.SensorFieldOfViewGraphics.EllipsoidHorizonSurfaceMaterial">
+      <summary>
+            Gets or sets the material used to fill ellipsoid horizon surfaces.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.SensorFieldOfViewGraphics.EllipsoidSurfaceMaterial">
+      <summary>
+            Gets or sets the material used to fill ellipsoid surfaces.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.SensorFieldOfViewGraphics.IntersectionColor">
+      <summary>
+            Gets or sets the color of the intersection outline of the sensor with the central body.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.SensorFieldOfViewGraphics.IntersectionWidth">
+      <summary>
+            Gets or sets the width of the intersection outline of the sensor with the central body.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.SensorFieldOfViewGraphics.LateralSurfaceMaterial">
+      <summary>
+            Gets or sets the material used to fill lateral surfaces.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.SensorFieldOfViewGraphics.PortionToDisplay">
+      <summary>
+            Gets or sets the portion of the sensor to display.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.SensorFieldOfViewGraphics.Show">
+      <summary>
+            Gets or sets whether or not the sensor is shown.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.SensorFieldOfViewGraphics.ShowDomeSurfaces">
+      <summary>
+            Gets or sets whether or not the sensor's dome surfaces are shown.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.SensorFieldOfViewGraphics.ShowEllipsoidHorizonSurfaces">
+      <summary>
+            Gets or sets whether or not the sensor's ellipsoid horizon surfaces are shown.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.SensorFieldOfViewGraphics.ShowEllipsoidSurfaces">
+      <summary>
+            Gets or sets whether or not the sensor's ellipsoid surfaces are shown.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.SensorFieldOfViewGraphics.ShowIntersection">
+      <summary>
+            Gets or sets whether or not the intersection outline of the sensor with the central body is shown.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.SensorFieldOfViewGraphics.ShowLateralSurfaces">
+      <summary>
+            Gets or sets whether or not the sensor's lateral surfaces are shown.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.SolidColorMaterialGraphics">
+      <summary>
+            Describes graphical properties of a material that represents and single color.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.SolidColorMaterialGraphics.#ctor">
+      <summary>
+            Initializes a new instance.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.SolidColorMaterialGraphics.#ctor(AGI.Foundation.Cesium.Advanced.CesiumProperty{System.Drawing.Color})">
+      <summary>
+            Initializes a new instance with the specified color.
+            </summary>
+      <param name="color">The color.</param>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.SolidColorMaterialGraphics.#ctor(System.Drawing.Color)">
+      <summary>
+            Initializes a new instance with the specified color.
+            </summary>
+      <param name="color">The color.</param>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.SolidColorMaterialGraphics.Color">
+      <summary>
+            Gets or sets the color.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.StripeMaterialGraphics">
+      <summary>
+            Describes graphical properties of a material that represents alternating stripes.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.StripeMaterialGraphics.#ctor">
+      <summary>
+            Initializes a new instance.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.StripeMaterialGraphics.EvenColor">
+      <summary>
+            Gets or sets the color of the even stripes.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.StripeMaterialGraphics.OddColor">
+      <summary>
+            Gets or sets the color of the odd stripes.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.StripeMaterialGraphics.Offset">
+      <summary>
+            Gets or sets the offset of the start of the stripes. 0 starts at the first stripe,
+            1 starts at the second stripe, and values in between specify a percentage into
+            the first strip at which to start.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.StripeMaterialGraphics.Orientation">
+      <summary>
+            Gets or sets the stripe orientation.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.StripeMaterialGraphics.Repeat">
+      <summary>
+            Gets the number of times the stripes should repeat; with 1 causing each stripe to be drawn once.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.TimeIntervalCesiumProperty`1">
+      <summary>
+            A <see cref="T:AGI.Foundation.Cesium.Advanced.CesiumProperty`1" /> that specifies a constant value over multiple distinct intervals of time.
+            Values are specified using a <see cref="T:AGI.Foundation.Time.TimeIntervalCollection`1" /> where the <see cref="P:AGI.Foundation.Time.TimeInterval`1.Data" />
+            property of each interval specifies the value over that interval.
+            </summary>
+      <typeparam name="T">The type of value.</typeparam>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.TimeIntervalCesiumProperty`1.#ctor">
+      <summary>
+            Initializes a new instance.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.TimeIntervalCesiumProperty`1.#ctor(AGI.Foundation.Time.TimeIntervalCollection{`0})">
+      <summary>
+            Initializes a new instance with the provided <see cref="T:AGI.Foundation.Time.TimeIntervalCollection`1" />.
+            </summary>
+      <param name="intervals">The initial collection of intervals.</param>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.TimeIntervalCesiumProperty`1.Intervals">
+      <summary>
+            Gets or sets time intervals over which this property is defined.  Each interval's
+            <see cref="P:AGI.Foundation.Time.TimeInterval`1.Data" /> property specifies the value of the property over that
+            interval.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.TimeIntervalCesiumProperty`1.op_Implicit(AGI.Foundation.Time.TimeIntervalCollection{`0})~AGI.Foundation.Cesium.TimeIntervalCesiumProperty{`0}">
+      <summary>
+            Converts a <see cref="T:AGI.Foundation.Time.TimeIntervalCollection`1" /> to a <see cref="T:AGI.Foundation.Cesium.TimeIntervalCesiumProperty`1" />.
+            </summary>
+      <param name="value">The value to convert</param>
+      <returns>The value wrapped in a <see cref="T:AGI.Foundation.Cesium.TimeIntervalCesiumProperty`1" />.</returns>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.VectorGraphics">
+      <summary>
+            Defines the graphical properties of a vector defined by <see cref="T:AGI.Foundation.Geometry.IVectorService" />.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.VectorGraphics.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:AGI.Foundation.Cesium.VectorGraphics" /> class</summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.VectorGraphics.Color">
+      <summary>
+            Gets or sets the color of the vector.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.VectorGraphics.Length">
+      <summary>
+            Gets or sets the graphical length of the vector, independent of it's actual length.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.VectorGraphics.MinimumLengthInPixels">
+      <summary>
+            Gets or sets the minimum graphical length of the vector in pixels.
+            This causes the vector to be drawn at a fixed size if the <see cref="P:AGI.Foundation.Cesium.VectorGraphics.Length" /> value
+            would result in a vector of a smaller size.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.VectorGraphics.Show">
+      <summary>
+            Gets or sets whether or not the vector is shown.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.Advanced.AzimuthElevationMaskCesiumSource">
+      <summary>
+            A <see cref="T:AGI.Foundation.Cesium.Advanced.CesiumSource" /> that generates CZML fan geometry for objects that provide
+            <see cref="T:AGI.Foundation.Terrain.IAzimuthElevationMaskService" /> and <see cref="T:AGI.Foundation.Cesium.Advanced.IAzimuthElevationMaskGraphicsService" />.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.Advanced.AzimuthElevationMaskCesiumSource.CreateGenerators(AGI.Foundation.Cesium.Advanced.CesiumGeneratorContext,System.Object)">
+      <summary>
+            Creates zero or more <see cref="T:AGI.Foundation.Cesium.Advanced.CesiumGenerator" /> instances for the specified item and adds them
+            to the specified <see cref="T:AGI.Foundation.Cesium.Advanced.CesiumGeneratorContext" />.
+            </summary>
+      <param name="context">The context to which to add the generators.</param>
+      <param name="item">The item for which to produce generators.</param>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.Advanced.AzimuthElevationMaskCesiumSource.Instance">
+      <summary>
+            Gets the instance.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.Advanced.BillboardCesiumSource">
+      <summary>
+            A <see cref="T:AGI.Foundation.Cesium.Advanced.CesiumSource" /> that generates CZML billboards for objects
+            that provide <see cref="T:AGI.Foundation.Cesium.Advanced.IBillboardGraphicsService" />.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.Advanced.BillboardCesiumSource.CreateGenerators(AGI.Foundation.Cesium.Advanced.CesiumGeneratorContext,System.Object)">
+      <summary>
+            Creates zero or more <see cref="T:AGI.Foundation.Cesium.Advanced.CesiumGenerator" /> instances for the specified item and adds them
+            to the specified <see cref="T:AGI.Foundation.Cesium.Advanced.CesiumGeneratorContext" />.
+            </summary>
+      <param name="context">The context to which to add the generators.</param>
+      <param name="item">The item for which to produce generators.</param>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.Advanced.BillboardCesiumSource.Instance">
+      <summary>
+            Gets the instance.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.Advanced.CachingCesiumUriResolver">
+      <summary>
+            A URI resolver that downloads files and converts them to data URIs.  Downloaded files are cached
+            using a least-recently used cache.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.Advanced.CachingCesiumUriResolver.#ctor(System.Int32)">
+      <summary>
+            Initializes a new instance.
+            </summary>
+      <param name="max">The maximum number of remote files to cache before removing the oldest.</param>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.Advanced.CachingCesiumUriResolver.AddUri(System.Uri,System.Uri)">
+      <summary>
+            Add a URI to the cache for future calls to ResolveUri.
+            </summary>
+      <param name="sourceUri">The source URI.</param>
+      <param name="resolvedUri">The resolved URI.</param>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.Advanced.CachingCesiumUriResolver.ContainsUri(System.Uri)">
+      <summary>
+            Checks whether the cache already contains a resolved URI for the given URI.
+            </summary>
+      <param name="sourceUri">The source URI.</param>
+      <returns>True if the cache already has a resolved URI for that URI, false otherwise.</returns>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.Advanced.CachingCesiumUriResolver.ResolveUri(System.Uri)">
+      <summary>
+            Resolves a URI, producing a new URI for inclusion in a CZML document.
+            </summary>
+      <param name="uri">The source URI.</param>
+      <returns>A URI suitable for CZML.</returns>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.Advanced.CachingCesiumUriResolver.ThreadLocalInstance">
+      <summary>
+            An instance of <see cref="T:AGI.Foundation.Cesium.Advanced.CachingCesiumUriResolver" /> local to the calling thread.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.Advanced.CentralBodySurfaceRegionCesiumSource">
+      <summary>
+            A <see cref="T:AGI.Foundation.Cesium.Advanced.CesiumSource" /> that generates CZML polygons for objects that provide
+            <see cref="T:AGI.Foundation.Cesium.Advanced.ICentralBodySurfaceRegionGraphicsService" /> and <see cref="T:AGI.Foundation.Platforms.ICentralBodySurfaceRegionService" />.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.Advanced.CentralBodySurfaceRegionCesiumSource.CreateGenerators(AGI.Foundation.Cesium.Advanced.CesiumGeneratorContext,System.Object)">
+      <summary>
+            Creates zero or more <see cref="T:AGI.Foundation.Cesium.Advanced.CesiumGenerator" /> instances for the specified item and adds them
+            to the specified <see cref="T:AGI.Foundation.Cesium.Advanced.CesiumGeneratorContext" />.
+            </summary>
+      <param name="context">The context to which to add the generators.</param>
+      <param name="item">The item for which to produce generators.</param>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.Advanced.CentralBodySurfaceRegionCesiumSource.Instance">
+      <summary>
+            Gets the instance.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.Advanced.CesiumGenerator">
+      <summary>
+            Base class for all objects that wish to write custom CZML.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.Advanced.CesiumGenerator.#ctor(System.Object)">
+      <summary>
+            Creates a new instance.
+            </summary>
+      <param name="owner">The item for which data is to be generated.</param>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.Advanced.CesiumGenerator.Generate(AGI.Foundation.Cesium.CesiumOutputStream)">
+      <summary>
+            Generates CZML and writes it to the stream.
+            </summary>
+      <param name="output">The stream to which to write the property.</param>
+      <returns>A value indicating whether there is more data to generate for this property.</returns>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.Advanced.CesiumGenerator.Owner">
+      <summary>
+            Gets the item for which data is to be generated.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.Advanced.CesiumGeneratorContext">
+      <summary>
+            This class both provides contextual information regarding the CZML being written
+            as well as allows <see cref="T:AGI.Foundation.Cesium.Advanced.CesiumSource" /> instances to add
+            <see cref="T:AGI.Foundation.Cesium.Advanced.CesiumGenerator">CesiumGenerators</see> to be written.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.Advanced.CesiumGeneratorContext.AddAdditionalSource(AGI.Foundation.Cesium.Advanced.CesiumSource,System.Object)">
+      <summary>
+            Adds an additional <see cref="T:AGI.Foundation.Cesium.Advanced.CesiumSource" /> required on a given <paramref name="item" />.
+            This method may only be called while creating generators as part of the
+            <see cref="M:AGI.Foundation.Cesium.Advanced.CesiumGeneratorContext.CreateCesiumGenerators``1(System.Collections.Generic.IEnumerable{``0})" /> method.
+            </summary>
+      <param name="source">The additional source required for the item.</param>
+      <param name="item">The object that requires the additional source.</param>
+      <exception cref="T:System.InvalidOperationException">
+            This method was not called from within <see cref="M:AGI.Foundation.Cesium.Advanced.CesiumGeneratorContext.CreateCesiumGenerators``1(System.Collections.Generic.IEnumerable{``0})" />.
+            </exception>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.Advanced.CesiumGeneratorContext.AddChildGenerator(AGI.Foundation.Cesium.Advanced.CesiumGenerator)">
+      <summary>
+            Adds a Cesium generator for a property.
+            </summary>
+      <param name="childGenerator">The generator responsible for generating the property.</param>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.Advanced.CesiumGeneratorContext.Constrain(AGI.Foundation.Time.TimeInterval)">
+      <summary>
+            Return a new instance that has <see cref="P:AGI.Foundation.Cesium.Advanced.CesiumGeneratorContext.RequestedInterval" /> intersected with the given interval.
+            </summary>
+      <param name="interval">The interval to further constrain by.</param>
+      <returns>A new instance.</returns>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.Advanced.CesiumGeneratorContext.EvaluatorGroup">
+      <summary>
+            Gets the <see cref="P:AGI.Foundation.Cesium.Advanced.CesiumGeneratorContext.EvaluatorGroup" /> to use when evaluating.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.Advanced.CesiumGeneratorContext.MaximumDataPointsPerFragment">
+      <summary>
+            Gets the maximum number of data points to write at a time.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.Advanced.CesiumGeneratorContext.PrettyFormatting">
+      <summary>
+            Gets whether or not the written data should be formatted for easy human readability.
+            When this property is false (the default), more compact Cesium is generated.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.Advanced.CesiumGeneratorContext.RaiseSamplingError(System.Object,System.Exception)">
+      <summary>
+            Called by Cesium generator or sources when an exception is encountered while sampling a property.
+            </summary>
+      <param name="sender">The instance which generated the exception.</param>
+      <param name="exception">The exception.</param>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.Advanced.CesiumGeneratorContext.RequestedInterval">
+      <summary>
+            Gets the requested interval for data.  Generators may generate values outside this interval if it
+            is equivalent in speed and compactness.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.Advanced.CesiumGeneratorContext.Step">
+      <summary>
+            Gets the smallest step that should be taken when sampling.
+            </summary>
+    </member>
+    <member name="F:AGI.Foundation.Cesium.Advanced.CesiumGeneratorContext.Version">
+      <summary>
+            Gets the CZML version being written.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.Advanced.CesiumProperty`1">
+      <summary>
+            The base class for all <a href="../Programmer's Guide/Overview/Cesium/Overview.html">CZML</a> properties.
+            </summary>
+      <typeparam name="T">The type of the data.</typeparam>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.Advanced.CesiumProperty`1.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:AGI.Foundation.Cesium.Advanced.CesiumProperty`1" /> class</summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.Advanced.CesiumProperty`1.op_Implicit(AGI.Foundation.DateMotionCollection{`0})~AGI.Foundation.Cesium.Advanced.CesiumProperty{`0}">
+      <summary>
+            Converts a <see cref="T:AGI.Foundation.DateMotionCollection`1" /> to a <see cref="T:AGI.Foundation.Cesium.SampledCesiumProperty`1" />.
+            </summary>
+      <param name="value">The value to convert</param>
+      <returns>The value wrapped in a <see cref="T:AGI.Foundation.Cesium.TimeIntervalCesiumProperty`1" />.</returns>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.Advanced.CesiumProperty`1.op_Implicit(AGI.Foundation.Time.TimeIntervalCollection{AGI.Foundation.Cesium.Advanced.CesiumProperty{`0}})~AGI.Foundation.Cesium.Advanced.CesiumProperty{`0}">
+      <summary>
+            Converts a <see cref="T:AGI.Foundation.Time.TimeIntervalCollection`1" /> to a <see cref="T:AGI.Foundation.Cesium.CompositeCesiumProperty`1" />.
+            </summary>
+      <param name="value">The value to convert</param>
+      <returns>The value wrapped in a <see cref="T:AGI.Foundation.Cesium.CompositeCesiumProperty`1" />.</returns>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.Advanced.CesiumProperty`1.op_Implicit(AGI.Foundation.Time.TimeIntervalCollection{`0})~AGI.Foundation.Cesium.Advanced.CesiumProperty{`0}">
+      <summary>
+            Converts a <see cref="T:AGI.Foundation.Time.TimeIntervalCollection`1" /> to a <see cref="T:AGI.Foundation.Cesium.TimeIntervalCesiumProperty`1" />.
+            </summary>
+      <param name="value">The value to convert</param>
+      <returns>The value wrapped in a <see cref="T:AGI.Foundation.Cesium.TimeIntervalCesiumProperty`1" />.</returns>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.Advanced.CesiumProperty`1.op_Implicit(`0)~AGI.Foundation.Cesium.Advanced.CesiumProperty{`0}">
+      <summary>
+            Converts a <typeparamref name="T" /> to a <see cref="T:AGI.Foundation.Cesium.ConstantCesiumProperty`1" />.
+            </summary>
+      <param name="value">The value to convert</param>
+      <returns>The value wrapped in a <see cref="T:AGI.Foundation.Cesium.ConstantCesiumProperty`1" />.</returns>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.Advanced.CesiumSource">
+      <summary>
+            The base class for items that produce <see cref="T:AGI.Foundation.Cesium.Advanced.CesiumGenerator" /> instances for writing CZML.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.Advanced.CesiumSource.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:AGI.Foundation.Cesium.Advanced.CesiumSource" /> class</summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.Advanced.CesiumSource.CreateGenerators``1(AGI.Foundation.Cesium.Advanced.CesiumGeneratorContext,System.Collections.Generic.IEnumerable{``0})">
+      <summary>
+            Creates zero or more <see cref="T:AGI.Foundation.Cesium.Advanced.CesiumGenerator" /> instances for the specified items and adds them
+            to the specified <see cref="T:AGI.Foundation.Cesium.Advanced.CesiumGeneratorContext" />.
+            </summary>
+      <param name="context">The context to which to add the generators.</param>
+      <param name="items">The items for which to produce generators.</param>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.Advanced.CesiumSource.CreateGenerators(AGI.Foundation.Cesium.Advanced.CesiumGeneratorContext,System.Object)">
+      <summary>
+            Creates zero or more <see cref="T:AGI.Foundation.Cesium.Advanced.CesiumGenerator" /> instances for the specified item and adds them
+            to the specified <see cref="T:AGI.Foundation.Cesium.Advanced.CesiumGeneratorContext" />.
+            </summary>
+      <param name="context">The context to which to add the generators.</param>
+      <param name="item">The item for which to produce generators.</param>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.Advanced.DescriptionCesiumSource">
+      <summary>
+            A <see cref="T:AGI.Foundation.Cesium.Advanced.CesiumSource" /> that generates a CZML description
+            for objects that provide <see cref="T:AGI.Foundation.Cesium.Advanced.IDescriptionService" />.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.Advanced.DescriptionCesiumSource.CreateGenerators(AGI.Foundation.Cesium.Advanced.CesiumGeneratorContext,System.Object)">
+      <summary>
+            Creates zero or more <see cref="T:AGI.Foundation.Cesium.Advanced.CesiumGenerator" /> instances for the specified item and adds them
+            to the specified <see cref="T:AGI.Foundation.Cesium.Advanced.CesiumGeneratorContext" />.
+            </summary>
+      <param name="context">The context to which to add the generators.</param>
+      <param name="item">The item for which to produce generators.</param>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.Advanced.DescriptionCesiumSource.Instance">
+      <summary>
+            Gets the instance.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.Advanced.EllipsoidCesiumSource">
+      <summary>
+            A <see cref="T:AGI.Foundation.Cesium.Advanced.CesiumSource" /> that generates CZML ellipsoids for objects
+            that provide <see cref="T:AGI.Foundation.Cesium.Advanced.IEllipsoidGraphicsService" />.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.Advanced.EllipsoidCesiumSource.CreateGenerators(AGI.Foundation.Cesium.Advanced.CesiumGeneratorContext,System.Object)">
+      <summary>
+            Creates zero or more <see cref="T:AGI.Foundation.Cesium.Advanced.CesiumGenerator" /> instances for the specified item and adds them
+            to the specified <see cref="T:AGI.Foundation.Cesium.Advanced.CesiumGeneratorContext" />.
+            </summary>
+      <param name="context">The context to which to add the generators.</param>
+      <param name="item">The item for which to produce generators.</param>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.Advanced.EllipsoidCesiumSource.Instance">
+      <summary>
+            Gets the instance.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.Advanced.FieldOfViewCesiumSource">
+      <summary>
+            A <see cref="T:AGI.Foundation.Cesium.Advanced.CesiumSource" /> that generates CZML sensors for objects that provide
+            <see cref="T:AGI.Foundation.Cesium.Advanced.IFieldOfViewGraphicsService" /> and <see cref="T:AGI.Foundation.Geometry.Shapes.IFieldOfViewService" />.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.Advanced.FieldOfViewCesiumSource.CreateGenerators(AGI.Foundation.Cesium.Advanced.CesiumGeneratorContext,System.Object)">
+      <summary>
+            Creates zero or more <see cref="T:AGI.Foundation.Cesium.Advanced.CesiumGenerator" /> instances for the specified item and adds them
+            to the specified <see cref="T:AGI.Foundation.Cesium.Advanced.CesiumGeneratorContext" />.
+            </summary>
+      <param name="context">The context to which to add the generators.</param>
+      <param name="item">The item for which to produce generators.</param>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.Advanced.FieldOfViewCesiumSource.Instance">
+      <summary>
+            Gets the instance.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.Advanced.IAzimuthElevationMaskGraphicsService">
+      <summary>
+            A service that defines the graphical properties of
+            an <see cref="T:AGI.Foundation.Terrain.AzimuthElevationMask" />.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.Advanced.IAzimuthElevationMaskGraphicsService.MaskGraphics">
+      <summary>
+            Gets the graphical properties of the mask.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.Advanced.IBillboardGraphicsService">
+      <summary>
+            A service that defines the graphical properties of a billboard.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.Advanced.IBillboardGraphicsService.BillboardGraphics">
+      <summary>
+            Gets the graphical properties of the billboard.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.Advanced.ICentralBodySurfaceRegionGraphicsService">
+      <summary>
+            A service that defines the graphical properties
+            of a <see cref="T:AGI.Foundation.Platforms.CentralBodySurfaceRegion" />.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.Advanced.ICentralBodySurfaceRegionGraphicsService.SurfaceRegionGraphics">
+      <summary>
+            Gets the graphical properties of the polygon.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.Advanced.ICesiumAvailabilityService">
+      <summary>
+            A service that defines the availability of a CZML object.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.Advanced.ICesiumAvailabilityService.CesiumAvailability">
+      <summary>
+            Gets the collection on intervals defining the availability.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.Advanced.ICesiumReferenceFrameService">
+      <summary>
+            A service that defines the reference frame in which an object's CZML position will be written.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.Advanced.ICesiumReferenceFrameService.CesiumReferenceFrame">
+      <summary>
+            Gets the reference frame in which an object's CZML position will be written.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.Advanced.ICesiumUriResolver">
+      <summary>
+            A URI resolver transforms URIs into another form for inclusion in a CZML document.
+            For example, <see cref="T:AGI.Foundation.Cesium.Advanced.CachingCesiumUriResolver" /> downloads files and converts them to data URIs,
+            while <see cref="T:AGI.Foundation.Cesium.Advanced.PassThroughCesiumUriResolver" /> leaves URIs unchanged.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.Advanced.ICesiumUriResolver.ResolveUri(System.Uri)">
+      <summary>
+            Resolves a URI, producing a new URI for inclusion in a CZML document.
+            </summary>
+      <param name="uri">The source URI.</param>
+      <returns>A URI suitable for CZML.</returns>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.Advanced.IDescriptionService">
+      <summary>
+            A service that defines the HTML description of an object.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.Advanced.IDescriptionService.Description">
+      <summary>
+            Gets the HTML description of the object.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.Advanced.IEllipsoidGraphicsService">
+      <summary>
+            A service that defines the graphical properties of an ellipsoid.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.Advanced.IEllipsoidGraphicsService.EllipsoidGraphics">
+      <summary>
+            Gets the graphical properties of the ellipsoid.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.Advanced.IFieldOfViewGraphicsService">
+      <summary>
+            A service that defines the graphical properties of a <see cref="T:AGI.Foundation.Geometry.Shapes.IFieldOfViewService" />.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.Advanced.IFieldOfViewGraphicsService.FieldOfViewGraphics">
+      <summary>
+            Gets the graphical properties of the field of view.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.Advanced.ILabelGraphicsService">
+      <summary>
+            A service that defines the graphical properties of a label.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.Advanced.ILabelGraphicsService.LabelGraphics">
+      <summary>
+            Gets the graphical properties of the label.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.Advanced.ILinkGraphicsService">
+      <summary>
+            A service that defines the graphical properties of an <see cref="T:AGI.Foundation.Access.ILinkService" />.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.Advanced.ILinkGraphicsService.LinkGraphics">
+      <summary>
+            Gets the graphics describing the line.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.Advanced.IMaterialGraphics">
+      <summary>
+            Base interface for all non-polyline material types.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.Advanced.IModelGraphicsService">
+      <summary>
+            A service that defines the graphical properties of a 3D model.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.Advanced.IModelGraphicsService.ModelGraphics">
+      <summary>
+            Gets the graphical properties of the model.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.Advanced.IPathGraphicsService">
+      <summary>
+            A service that defines the graphical properties of a path followed by a moving object..
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.Advanced.IPathGraphicsService.PathGraphics">
+      <summary>
+            Gets the graphical properties of the path.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.Advanced.IPointGraphicsService">
+      <summary>
+            A service that defines the graphical properties of a point.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.Advanced.IPointGraphicsService.PointGraphics">
+      <summary>
+            Gets the graphical properties of the point.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.Advanced.IPolylineMaterialGraphics">
+      <summary>
+            Base interface for all polyline material types.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.Advanced.IVectorGraphicsService">
+      <summary>
+            A service that defines the graphical properties of a <see cref="T:AGI.Foundation.Geometry.Vector" />.
+            </summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.Advanced.IVectorGraphicsService.VectorGraphics">
+      <summary>
+            Gets the graphical properties of the vector.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.Advanced.LabelCesiumSource">
+      <summary>
+            A <see cref="T:AGI.Foundation.Cesium.Advanced.CesiumSource" /> that generates CZML labels for objects
+            that provide <see cref="T:AGI.Foundation.Cesium.Advanced.ILabelGraphicsService" />.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.Advanced.LabelCesiumSource.CreateGenerators(AGI.Foundation.Cesium.Advanced.CesiumGeneratorContext,System.Object)">
+      <summary>
+            Creates zero or more <see cref="T:AGI.Foundation.Cesium.Advanced.CesiumGenerator" /> instances for the specified item and adds them
+            to the specified <see cref="T:AGI.Foundation.Cesium.Advanced.CesiumGeneratorContext" />.
+            </summary>
+      <param name="context">The context to which to add the generators.</param>
+      <param name="item">The item for which to produce generators.</param>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.Advanced.LabelCesiumSource.Instance">
+      <summary>
+            Gets the instance.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.Advanced.LinkCesiumSource">
+      <summary>
+            A <see cref="T:AGI.Foundation.Cesium.Advanced.CesiumSource" /> that generates CZML polylines for objects
+            that provide <see cref="T:AGI.Foundation.Access.ILinkService" /> and <see cref="T:AGI.Foundation.Cesium.Advanced.ILinkGraphicsService" />.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.Advanced.LinkCesiumSource.CreateGenerators(AGI.Foundation.Cesium.Advanced.CesiumGeneratorContext,System.Object)">
+      <summary>
+            Creates zero or more <see cref="T:AGI.Foundation.Cesium.Advanced.CesiumGenerator" /> instances for the specified item and adds them
+            to the specified <see cref="T:AGI.Foundation.Cesium.Advanced.CesiumGeneratorContext" />.
+            </summary>
+      <param name="context">The context to which to add the generators.</param>
+      <param name="item">The item for which to produce generators.</param>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.Advanced.LinkCesiumSource.Instance">
+      <summary>
+            Gets the instance.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.Advanced.LocationPointCesiumSource">
+      <summary>
+            A <see cref="T:AGI.Foundation.Cesium.Advanced.CesiumSource" /> that generates a CZML position for objects
+            that provide <see cref="T:AGI.Foundation.Geometry.ILocationPointService" />.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.Advanced.LocationPointCesiumSource.CreateGenerators(AGI.Foundation.Cesium.Advanced.CesiumGeneratorContext,System.Object)">
+      <summary>
+            Creates zero or more <see cref="T:AGI.Foundation.Cesium.Advanced.CesiumGenerator" /> instances for the specified item and adds them
+            to the specified <see cref="T:AGI.Foundation.Cesium.Advanced.CesiumGeneratorContext" />.
+            </summary>
+      <param name="context">The context to which to add the generators.</param>
+      <param name="item">The item for which to produce generators.</param>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.Advanced.LocationPointCesiumSource.Instance">
+      <summary>
+            Gets the instance.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.Advanced.ModelCesiumSource">
+      <summary>
+            A <see cref="T:AGI.Foundation.Cesium.Advanced.CesiumSource" /> that generates CZML models for objects
+            that provide <see cref="T:AGI.Foundation.Cesium.Advanced.IModelGraphicsService" />.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.Advanced.ModelCesiumSource.CreateGenerators(AGI.Foundation.Cesium.Advanced.CesiumGeneratorContext,System.Object)">
+      <summary>
+            Creates zero or more <see cref="T:AGI.Foundation.Cesium.Advanced.CesiumGenerator" /> instances for the specified item and adds them
+            to the specified <see cref="T:AGI.Foundation.Cesium.Advanced.CesiumGeneratorContext" />.
+            </summary>
+      <param name="context">The context to which to add the generators.</param>
+      <param name="item">The item for which to produce generators.</param>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.Advanced.ModelCesiumSource.Instance">
+      <summary>
+            Gets the instance.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.Advanced.OrientationAxesCesiumSource">
+      <summary>
+            A <see cref="T:AGI.Foundation.Cesium.Advanced.CesiumSource" /> that generates a CZML orientation for objects
+            that provide <see cref="T:AGI.Foundation.Geometry.IOrientationAxesService" />.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.Advanced.OrientationAxesCesiumSource.CreateGenerators(AGI.Foundation.Cesium.Advanced.CesiumGeneratorContext,System.Object)">
+      <summary>
+            Creates zero or more <see cref="T:AGI.Foundation.Cesium.Advanced.CesiumGenerator" /> instances for the specified item and adds them
+            to the specified <see cref="T:AGI.Foundation.Cesium.Advanced.CesiumGeneratorContext" />.
+            </summary>
+      <param name="context">The context to which to add the generators.</param>
+      <param name="item">The item for which to produce generators.</param>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.Advanced.OrientationAxesCesiumSource.Instance">
+      <summary>
+            Gets the instance.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.Advanced.PassThroughCesiumUriResolver">
+      <summary>
+            A URI resolver that leaves URIs unchanged.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.Advanced.PassThroughCesiumUriResolver.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:AGI.Foundation.Cesium.Advanced.PassThroughCesiumUriResolver" /> class</summary>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.Advanced.PassThroughCesiumUriResolver.Instance">
+      <summary>
+            A static instance of <see cref="T:AGI.Foundation.Cesium.Advanced.PassThroughCesiumUriResolver" /> usable from any thread.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.Advanced.PassThroughCesiumUriResolver.ResolveUri(System.Uri)">
+      <summary>
+            Resolves a URI, leaving it unchanged.
+            </summary>
+      <param name="uri">The source URI.</param>
+      <returns>The same URI.</returns>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.Advanced.PathCesiumSource">
+      <summary>
+            A <see cref="T:AGI.Foundation.Cesium.Advanced.CesiumSource" /> that generates a CZML path for objects
+            that provide <see cref="T:AGI.Foundation.Cesium.Advanced.IPathGraphicsService" />.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.Advanced.PathCesiumSource.CreateGenerators(AGI.Foundation.Cesium.Advanced.CesiumGeneratorContext,System.Object)">
+      <summary>
+            Creates zero or more <see cref="T:AGI.Foundation.Cesium.Advanced.CesiumGenerator" /> instances for the specified item and adds them
+            to the specified <see cref="T:AGI.Foundation.Cesium.Advanced.CesiumGeneratorContext" />.
+            </summary>
+      <param name="context">The context to which to add the generators.</param>
+      <param name="item">The item for which to produce generators.</param>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.Advanced.PathCesiumSource.Instance">
+      <summary>
+            Gets the instance.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.Advanced.PointGraphicsCesiumSource">
+      <summary>
+            A <see cref="T:AGI.Foundation.Cesium.Advanced.CesiumSource" /> that generates a point graphic for
+            objects that provide <see cref="T:AGI.Foundation.Cesium.Advanced.IPointGraphicsService" />.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.Advanced.PointGraphicsCesiumSource.CreateGenerators(AGI.Foundation.Cesium.Advanced.CesiumGeneratorContext,System.Object)">
+      <summary>
+            Creates zero or more <see cref="T:AGI.Foundation.Cesium.Advanced.CesiumGenerator" /> instances for the specified item and adds them
+            to the specified <see cref="T:AGI.Foundation.Cesium.Advanced.CesiumGeneratorContext" />.
+            </summary>
+      <param name="context">The context to which to add the generators.</param>
+      <param name="item">The item for which to produce generators.</param>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.Advanced.PointGraphicsCesiumSource.Instance">
+      <summary>
+            Gets the instance.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.Advanced.SamplingErrorEventArgs">
+      <summary>
+            Holds details of the <see cref="E:AGI.Foundation.Cesium.CzmlDocument.SamplingError" /> event.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.Advanced.SamplingErrorEventArgs.#ctor(System.Exception)">
+      <summary>
+            Creates a new instance with the provided exception.
+            </summary>
+      <param name="exception"></param>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.Advanced.SamplingErrorEventArgs.Exception">
+      <summary>
+            Gets the exception pertaining to this event.
+            </summary>
+    </member>
+    <member name="T:AGI.Foundation.Cesium.Advanced.VectorCesiumSource">
+      <summary>
+            A <see cref="T:AGI.Foundation.Cesium.Advanced.CesiumSource" /> that generates a CZML vector for objects that provide
+            <see cref="T:AGI.Foundation.Geometry.IVectorService" /> and <see cref="T:AGI.Foundation.Cesium.Advanced.IVectorGraphicsService" />.
+            </summary>
+    </member>
+    <member name="M:AGI.Foundation.Cesium.Advanced.VectorCesiumSource.CreateGenerators(AGI.Foundation.Cesium.Advanced.CesiumGeneratorContext,System.Object)">
+      <summary>
+            Creates zero or more <see cref="T:AGI.Foundation.Cesium.Advanced.CesiumGenerator" /> instances for the specified item and adds them
+            to the specified <see cref="T:AGI.Foundation.Cesium.Advanced.CesiumGeneratorContext" />.
+            </summary>
+      <param name="context">The context to which to add the generators.</param>
+      <param name="item">The item for which to produce generators.</param>
+    </member>
+    <member name="P:AGI.Foundation.Cesium.Advanced.VectorCesiumSource.Instance">
+      <summary>
+            Gets the instance.
+            </summary>
+    </member>
+  </members>
+</doc>

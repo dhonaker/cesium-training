@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Cesium Client</title>
+        <link rel="stylesheet" href="js/Cesium/Widgets/widgets.css" />
+        <link rel="stylesheet" href="css/site.css" />
+        <script src="js/jquery-2.1.4.min.js"></script>
+        <script src="js/Cesium/Cesium.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/_run.js"></script>
+    </head>
+    <body>
+        <div id="cesiumContainer"></div>
+        <input type="button" class="uiButton" value="Shapes & Volumes" onclick="app.shapesVolumes()"/>
+        <input type="button" class="uiButton" value="Billboards & Models" onclick="app.billboardsModels()"/>
+        <input type="button" class="uiButton" value="DataSources" onclick="app.dataSources()"/>
+        <input type="button" class="uiButton" value="Imagery" onclick="app.imageryProviders()"/>
+        <input type="button" class="uiButton" value="Terrain" onclick="app.terrainProviders()"/>
+        <input type="button" class="uiButton" value="Picking" onclick="app.picking()"/>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+#cesiumContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.uiButton {
+    position: relative;
+    z-index: 2;
+    height: 30px;
+    width: 150px;
+    background-color: #4cff00;
+    font-weight: bold;
+}

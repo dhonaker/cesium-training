@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Cesium Realtime</title>
+
+        <!--This will load the CSS for Cesium and a custom "site.css" to
+            override the basic HTML styling for the elements we care about-->
+        <link rel="stylesheet" href="Cesium/Widgets/widgets.css">
+        <link rel="stylesheet" href="Content/site.css">
+
+        <!--This loads the Cesium.js script which can then be used by our app.js
+            We're also loading jquery so we can make some AJAX calls later   -->
+        <script src="Cesium/Cesium.js"></script>
+        <script src="Scripts/jquery-2.1.4.min.js"></script>
+        <script src="Scripts/app.js"></script>
+        <script src="Scripts/_run.js"></script>
+
+    </head>
+    <body>
+        <!--This is the main HTML body, here we will add a div container for Cesium-->
+        <div id="cesiumContainer" class="fullWindow"></div>
+    </body>
+</html>

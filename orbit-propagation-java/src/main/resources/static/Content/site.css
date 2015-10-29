@@ -1,0 +1,39 @@
+﻿#cesiumContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.buttonHolder {
+    position: absolute;
+    top: 12px;
+    left: 5px;
+    padding: 7px;
+    width: 370px;
+    background-color: rgba(42, 42, 42, 0.8);
+    border: 2px solid grey;
+    border-radius: 7px;
+    vertical-align: middle;
+    color: grey;
+}
+
+.input-group-addon {
+    width: 150px;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    height: 100%;
+}

@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Orbit Propagation</title>
+    <link rel="stylesheet" href="Content/bootstrap.min.css" />
+    <link rel="stylesheet" href="Cesium/Widgets/widgets.css" />
+    <link rel="stylesheet" href="Content/site.css" />
+    <script src="Scripts/jquery-2.1.3.min.js"></script>
+    <script src="Cesium/Cesium.js"></script>
+    <script src="Scripts/app.js"></script>
+    <script src="Scripts/_run.js"></script>
+</head>
+<body>
+    <div id="cesiumContainer"></div>
+    <div class="buttonHolder">
+        <div class="input-group">
+            <span class="input-group-addon">Satellite Name</span>
+            <input type="text" id="satelliteName" class="form-control" value="ScienceSat" aria-describedby="satelliteName" />
+        </div>
+        <div class="input-group">
+            <span class="input-group-addon">Start Time</span>
+            <input type="text" id="startTime" class="form-control" value="2015-01-01T00:00:00.000" aria-describedby="startTime" />
+        </div>
+        <div class="input-group">
+            <span class="input-group-addon">Stop Time</span>
+            <input type="text" id="stopTime" class="form-control" value="2015-01-02T00:00:00.000" aria-describedby="stopTime" />
+        </div>
+        <div class="input-group">
+            <span class="input-group-addon">Semi Major Axis</span>
+            <input type="text" id="semiMajorAxis" class="form-control" value="7000000.00" aria-describedby="semiMajorAxis" />
+        </div>
+        <div class="input-group">
+            <span class="input-group-addon">Eccentricity</span>
+            <input type="text" id="eccentricity" class="form-control" value="0.005" aria-describedby="eccentricity" />
+        </div>
+        <div class="input-group">
+            <span class="input-group-addon">Inclination</span>
+            <input type="text" id="inclination" class="form-control" value="97.6" aria-describedby="inclination" />
+        </div>
+        <div class="input-group">
+            <span class="input-group-addon">Arg. Of Periapsis</span>
+            <input type="text" id="argOfPeriapsis" class="form-control" value="0.0" aria-describedby="argOfPeriapsis" />
+        </div>
+        <div class="input-group">
+            <span class="input-group-addon">RAAN</span>
+            <input type="text" id="raan" class="form-control" value="0.0" aria-describedby="raan" />
+        </div>
+        <div class="input-group">
+            <span class="input-group-addon">True Anomaly</span>
+            <input type="text" id="trueAnomaly" class="form-control" value="0.0" aria-describedby="trueAnomaly" />
+        </div>
+        <br />
+        <input type="button" class="btn btn-success" value="Calculate" onclick="app.PropagateOrbit()" />
+    </div>
+</body>
+</html>
